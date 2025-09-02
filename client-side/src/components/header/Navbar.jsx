@@ -32,22 +32,23 @@ const [show, setShow] = useState(false);
   };
 
   return (
-    <div className="header menu-opened ">
-		<div className={` flex justify-between `}> 
-      <div className={` ${show && 'bg-black'} ${!isHome && 'bg-black'} fixed top-0 left-0 right-0  z-[1000]`}>
-      <div className={`flex items-center justify-center gap-[5%] -ml-80`}>
+    <div className="header menu-opened overflow-hidden w-[100vw]">
+		<div className={` flex justify-between relative`}> 
+      <div className={` ${show && 'bg-black'} ${!isHome && 'bg-black'} fixed top-0 left-0 right-0  z-[1000]  top-div`}>
+      <div className={`flex items-center  justify-between mx-20  header-div`}>
             <Link to={'/'}>
-            <img className="header__logo logo mt-1 "  src="/logo-design.png" alt="logo"/>
+            <img className="header__logo logo mt-1 .logo-img"  src="/logo-design.png" alt="logo"/>
             </Link>
-        <div className="flex gap-10 ">
+
+        <div className="flex gap-20 sm:hidden xl:flex lg:flex md:flex header-nav">
            <Link to ='/' className='text-white hover:border-b-2 border-[#ce5311]'>    
            <span className='text-white text-xl hover:text-[#ce5311]'>Home</span>
           </Link>
           <Link to ='/' className='dropdown'>
              <span className=' text-white text-xl hover:text-[#ce5311] hover:border-b-2 border-[#ce5311] '>Services</span>
              <div className="dropdown-content mt-8
-             w-[1100px] h-[300px] flex items-center rounded-lg">
-             <div className="flex items-center">
+             w-[1100%] flex items-center rounded-lg">
+             <div className="flex items-center justify-between px-10">
                 <div className="w-[50%] text-gray-black flex flex-col items-center p-5">
                   <h1 className="text-2xl font-semibold text-black p-5">Our Services</h1>
                   <p className="text-black text-xl">At Erazone, we provide wide range of IT services tailored to meet your business needs. Our skilled professionals are dedicated to delivering exceptional results that exceed your expections</p>
@@ -62,9 +63,6 @@ const [show, setShow] = useState(false);
               </div>
              </div>
           </Link>
-          <Link to ='/technologies' className='hover:border-b-2 border-[#ce5311]'>
-             <span className='text-white text-xl hover:text-[#ce5311]'>Technologies</span>
-          </Link>
           <Link to ='/portfolios' className='hover:border-b-2 border-[#ce5311]'>
              <span className='text-white text-xl hover:text-[#ce5311]'>Portfolios</span>
           </Link>
@@ -73,16 +71,14 @@ const [show, setShow] = useState(false);
           </Link>
  
          </div>
-       </div>
-		  </div>
-{/* absolute top-0 right-10 z-50  */}
-            <div className=" nav-container flex justify-center gap-5 py-4 lg:hidden xl:hidden 2xl:hidden md:hidden">
+
+          <div className="menu-nav nav-container flex justify-center gap-5 py-4 sm:flex xl:hidden lg:hidden md:hidden">
               <div className="active">
                 <div className="menu-trigger__text">
                 <IconContext.Provider value={{ color: '#000000' }} className=''>
                  <div className='hidden menu-var'>
                 <Link to='#' onClick={showSidebar} className='menu-bars'>
-                   <span className="text-[#06ffff] text-lg">MENU</span>
+                   <span className="text-[#06ffff] text-lg ">MENU</span>
               <FaIcons.FaBars size={20}   color='#06ffff'  className='text-[#06ffff]' />
              
             </Link>
@@ -143,10 +139,10 @@ const [show, setShow] = useState(false);
                             {/* Menu */}
                             </div>
                           <div className="menu-trigger__lines"><i></i><i></i></div>
-                        </div>
-
-         
+                </div>  
 		    </div>
+       </div>
+		  </div>
         
   
 	</div>

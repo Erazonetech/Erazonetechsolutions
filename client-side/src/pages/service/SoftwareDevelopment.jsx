@@ -9,15 +9,15 @@ function SoftwareDevelopment({isHome,setIsHome}) {
  },[setIsHome])
 
   return (
-    <div className='mt-40 mx-20 mb-20'>
-        <div className='flex justify-between'>
-           <div className='max-w-[40%]'>
+    <div className='mt-40 mx-10 mb-20'>
+        <div className='flex justify-between xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-[10%] home-service'>
+           <div className='mb-5'>
              <h1 className='text-5xl pb-5 text-gray-900'>Custom Software Development</h1>
             <p className='text-xl text-gray-700'>Custom software development focuses on creating tailor-made solutions that meet the unique needs of a business. It involves designing, developing, and deploying software applications specifically built to solve specific challenges. By leveraging custom-built solutions, businesses can improve efficiency, scalability, and overall performance.</p>
            </div>
            {/* <div className='shadow-red-200'>
            </div> */}
-           <img className='bg-[#afaaaa] transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-orange-800 rounded-2xl w-[40%] h-[400px]' src="/custom-softwared.png" alt="custom software" />
+           <img className='bg-[#afaaaa] transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-orange-800 rounded-2xl h-[350px]' src="/custom-softwared.png" alt="custom software" />
         </div>
 
         <div>
@@ -66,7 +66,7 @@ function SoftwareDevelopment({isHome,setIsHome}) {
 
          <div className='mt-20'>
             <h1 className='text-2xl py-10 text-gray-900'>Industries We Create Software For</h1>
-            <div className='grid grid-cols-3 gap-5'>
+            <div className='grid xl:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  gap-5'>
 
                  <div className='relative overflow-hidden flex gap-5 p-5  bg-[#c7c4c4] transition-all duration-200 shadow-sm shadow-orange-800 rounded-lg before:absolute before:inset-0 before:bg-orange-800 before:transform before:origin-bottom before:scale-y-0 hover:before:scale-y-100 before:transition-transform before:duration-300 before:ease-in-out cursor-pointer'>
                         <div className=' relative z-10 '>

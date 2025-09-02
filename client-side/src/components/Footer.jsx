@@ -6,13 +6,13 @@ import {Clock, Facebook, Instagram, Linkedin, LocationEdit, Mail, Phone} from 'l
 
 function Footer() {
   return (
-    <div className='flex p-10 bg-[#2f1829] items-start'>
-      <div className='w-[40%] text-gray-200'>
+    <div className='overflow-hidden flex p-10 bg-[#2f1829] items-start footer'>
+      <div className='footer-p w-[40%] text-gray-200'>
         <img className='h-[150px] w-[250px]' src="/logo-design.png" alt="footer-logo" />
-        <p className='-mt-10 tracking-wide'>Welcome to ERAZONE, where innovation meets excellence. Since our inception, we have been crafting tailored software solutions designed to empower businesses and enrich lives. Our passionate team of experts is committed to delivering transformative digital experiences that inspire growth and success. At ERAZONE, we believe in shaping the future through technology, one innovative idea at a time.</p>
+        <p className=' -mt-10 tracking-wide'>Welcome to ERAZONE, where innovation meets excellence. Since our inception, we have been crafting tailored software solutions designed to empower businesses and enrich lives. Our passionate team of experts is committed to delivering transformative digital experiences that inspire growth and success. At ERAZONE, we believe in shaping the future through technology, one innovative idea at a time.</p>
       </div>
 
-      <div className='px-10 mt-10'>
+      <div className='footer-div-1 px-10 mt-10'>
         <h2 className='text-white text-xl mb-5'>Quick Access</h2>
         <div className='flex flex-col text-gray-200 gap-5'>
           <Link className='hover:text-orange-700' to='/'>Home</Link>

@@ -1,6 +1,9 @@
 import {motion} from 'framer-motion'
 import { useEffect } from 'react'
 import {Coffee, Factory, Film, GraduationCap, Hammer, Heart, House, Landmark} from 'lucide-react'
+import Map from '../components/Map'
+import ContactForm from '../components/contact/Contact'
+
 
 
 const variants = {
@@ -17,8 +20,6 @@ const variants = {
         }
     }
 }
-
-
 function About({setIsHome}) {
 
     useEffect(()=>{
@@ -143,6 +144,10 @@ function About({setIsHome}) {
                 
             </div>
         </div>
+        </div>
+        <div>
+            {/* <Map/> */}
+            <ContactForm/>
         </div>
     </motion.div>
   )

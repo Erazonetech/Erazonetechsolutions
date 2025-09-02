@@ -8,13 +8,13 @@ function WebDevelopment({setIsHome}) {
  },[setIsHome])
 
   return (
-    <div className='pt-40 px-20 pb-20 bg-slate-50'>
-        <div className='flex justify-between'>
-            <div className='max-w-[55%] mt-10 bg-inherit'>
+    <div className='pt-40 px-10 pb-20 bg-slate-50'>
+        <div className='flex justify-between xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-[10%] home-service'>
+            <div className='mb-5'>
                 <h2 className='text-4xl font-semibold pb-5 text-gray-700 '>Web Development</h2>
                 <p className='text-xl text-gray-600'>Our Agile experts can create bespoke applications, platforms and products to meet the requirements of your business or new venture.</p>
             </div>
-            <img className='bg-[#0e0e0e] transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-black rounded-2xl w-[35%] h-[300px]' src="/web-dev.jpeg" alt="web-dev" />
+            <img className='bg-[#0e0e0e] transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-black rounded-2xl h-[350px]' src="/web-dev.jpeg" alt="web-dev" />
         </div>
 
         
@@ -22,7 +22,7 @@ function WebDevelopment({setIsHome}) {
             <div className='flex justify-center '>
             <h1 className='font-semibold text-5xl text-black mb-10'>What We Do</h1>
             </div>
-            <div className='grid grid-cols-2 gap-5'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-5'>
                 <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
                     <Layers size={40} className='text-orange-500' />
                     <h2 className='py-5 text-2xl font-semibold'>Full Stack Development</h2>

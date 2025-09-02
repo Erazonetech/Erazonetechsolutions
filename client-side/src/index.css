@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -203,14 +204,15 @@ transform: rotate(3.142rad);
   display: inline-block;
 }
 .dropdown-content {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 0px;
   left: -70px;
-  background-color: #ffffff;
+  background-color: #ffffff; 
   min-width: 160px;
+  min-height: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 999;
 }
 .service-nav a,.nav-text a {
   text-decoration: none;
@@ -263,6 +265,7 @@ transform: rotate(3.142rad);
 .dropdown-content {
   display: none;
   min-width: 160px;
+  min-height: 300px;
   left: -500%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -287,6 +290,56 @@ color:#ce5311;
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover {}
 
 /* ABOUT */
+@media (max-width:700px) {
+  .menu-nav{
+    display: flex;
+  }
+}
+
+@media (min-width:0px) and (max-width:767px) {
+  .top-div{
+   max-width: 100vw;
+  }
+  .header-div{
+    display: flex;
+    margin: 0 5px 0 5px;
+    justify-content: space-between;
+   
+    
+  }
+  .header-nav{
+    display: none;
+  }
+  .logo-img{
+    width: 20%;
+  }
+  .footer-p {
+    display: none;
+  }
+  .footer{
+    padding: 5px;
+  }
+  .footer-div-1{
+    padding: 5px;
+  }
+  .hero-sec h1{
+    font-size: 50px;
+    width: 100%;
+  }
+  .home-service{
+    flex-direction: column;
+  }
+  .home-service div{
+    width: 100%;
+  }
+}
+@media (min-width:0px) and (max-width:767px){
+  .sm-p{
+    gap: 2px;
+  }
+  .sm-p li{
+    font-size: 12px;
+  }
+}

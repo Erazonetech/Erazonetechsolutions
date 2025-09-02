@@ -8,20 +8,20 @@ function UIUX({setIsHome}) {
   },[setIsHome])
 
   return (
-    <div className='pt-40 px-20 pb-20 bg-slate-50'>
-         <div className='flex justify-between'>
-           <div className='max-w-[50%]'>
+    <div className='pt-40 px-10 pb-20 bg-slate-50'>
+         <div className='flex justify-between xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-[10%] home-service'>
+           <div className='mb-5'>
              <h1 className='text-5xl pb-5 text-gray-900 mt-10'>Mobile Development</h1>
             <p className='text-xl text-gray-700 mt-5'>We deliver more than just apps. We deliver experiences. Our fast, responsive and highly scalable mobile app development will help you get ahead of the curve in no time!</p>
            </div>
-           <img className='bg-[#afaaaa] transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-orange-800 rounded-2xl w-[40%] h-[350px]' src="/ui-ux.webp" alt="Mobile dev" />
+           <img className='bg-[#afaaaa] transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-orange-800 rounded-2xl h-[350px]' src="/ui-ux.webp" alt="Mobile dev" />
         </div>
           <div className='mt-10'>
             <div className='flex flex-col items-center justify-center mb-10'>
             <h1 className='font-semibold text-5xl text-black mb-2'>What We Do</h1>
             <p className='text-black text-xl'>Exceptional UI/UX Designs That Enhance User Engagement and Deliver Seamless Experiences Across Platforms.</p>
             </div>
-            <div className='grid grid-cols-2 gap-5'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-5'>
                 <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
                     <Route  size={40} className='text-orange-500' />
                     <h2 className='py-5 text-2xl font-semibold'>User Journey Mapping</h2>
