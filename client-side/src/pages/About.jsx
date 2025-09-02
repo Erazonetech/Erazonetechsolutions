@@ -120,8 +120,8 @@ function About({setIsHome}) {
                     <img src="/asfawu.JPG" alt="pp" className='rounded-t-2xl h-[300px] w-[220px] ' />
                     <div className='absolute top-[85%] left-5 bg-white shadow-md shadow-black w-[85%] rounded-md px-2 py-4 flex flex-col items-center'>
                         <h2 className='text-xl text-orange-600 mb-2'>Asfawossen Endale</h2>
-                        <p className='italic text-lg mb-1'>Co-Founder</p>
-                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel obcaecati optio corporis reprehenderit dolores ea natus!</p>
+                        <p className='italic text-lg mb-1'>CEO</p>
+                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out'>Visionary with expertise in strategy team management, and driving company growth and success!</p>
                     </div>
                 </div>
 
@@ -129,16 +129,16 @@ function About({setIsHome}) {
                     <img src="nati.jpg" alt="pp" className='rounded-t-2xl h-[300px] w-[250px] ' />
                     <div className='absolute top-[85%] left-5 bg-white shadow-md shadow-black w-[85%] rounded-md px-2 py-4 flex flex-col items-center'>
                         <h2 className='text-xl text-orange-600 mb-2'>Natinael Bimer</h2>
-                        <p className='italic text-lg mb-1'>Co-Founder</p>
-                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel obcaecati optio corporis reprehenderit dolores ea natus!</p>
+                        <p className='italic text-lg mb-1'>Software Engineer</p>
+                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out'>Skilled engineer focused on developing high-performance, sclable applications with clean, and efficient code!</p>
                     </div>
                 </div>
                   <div className='relative flex flex-col items-center group transition-all transform'>
                     <img src="https://media.licdn.com/dms/image/v2/D4E03AQHpS7RkGxAM6A/profile-displayphoto-shrink_400_400/B4EZbpoLYXGcAg-/0/1747676347596?e=1756944000&v=beta&t=pq0oOxsznlWKGYf2DTJqvRdNyBpUft2uc_LlOEQvClA" alt="pp" className='rounded-t-2xl h-[300px] w-[220px] ' />
                     <div className='absolute top-[85%] left-5 bg-white shadow-md shadow-black w-[85%] rounded-md px-2 py-4 flex flex-col items-center'>
                         <h2 className='text-xl text-orange-600 mb-2'>Amanuel Tamirat</h2>
-                        <p className='italic text-lg mb-1'>Co-Founder</p>
-                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel obcaecati optio corporis reprehenderit dolores ea natus!</p>
+                        <p className='italic text-lg mb-1'>Fullstack Developer</p>
+                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out'>Experienced full-stack developer with expertise in building robust and scalable web applications!</p>
                     </div>
                 </div>
                 
