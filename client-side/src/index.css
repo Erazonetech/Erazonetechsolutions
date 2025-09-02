@@ -124,7 +124,7 @@ transform: rotate(3.142rad);
    display: flex;
    align-items: center;
    justify-content: center;
-    border: 1px solid #06ffff;
+    border: 1px solid #ce5311;
     border-radius: 5px;
     padding: 10px 5px;
    }
@@ -182,38 +182,18 @@ transform: rotate(3.142rad);
   list-style: none;
   min-height: 60px;
 }
+.nav-text-two{
+  padding: 12px 0px 8px 16px;
+  list-style: none;
+  min-height: 60px;
+}
 .service-nav{
  padding: 20px 20px;
   list-style: none;
   height: 60px;
   /* margin-bottom: 10px; */
 }
-/* Drop Down */
-.dropbtn {
-  /* color: black; */
-  /* width: 20px;
-  height: 20px;
-  padding: 16xp;
-  padding-top:4px ;
-  font-size: 16px; */
-  border: none;
-  
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  /* display: none; */
-  position: absolute;
-  top: 0px;
-  left: -70px;
-  background-color: #ffffff; 
-  min-width: 160px;
-  min-height: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 999;
-}
+
 .service-nav a,.nav-text a {
   text-decoration: none;
   color: #f5f5f5;
@@ -242,53 +222,57 @@ transform: rotate(3.142rad);
 }
 
 /* DropDown */
+
 .dropbtn {
-  /* color: black; */
-  /* width: 20px;
-  height: 20px; */
-  /* padding: 16px; */
-  /* padding-top:4px ; */
-  /* font-size: 16px; */
-  /* border: none; */
+  border: none;
   
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
-   /* padding: 16px; */
-  /* padding-top:4px ; */
-  /* padding-bottom: 16px; */
-  
+}
+.dropdown-content-two {
+  display: none;
+  position: absolute;
+  top: -300%;
+  left: 100%;
+  background-color: #ffffff; 
+  min-width: 160px;
+  min-height: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
 }
 
 .dropdown-content {
   display: none;
+  position: absolute;
   min-width: 160px;
   min-height: 300px;
+  top: 0px;
   left: -500%;
+  background-color: #ffffff; 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 999;
   padding: 10px;
   /* background-color:#272626 */
   
 }
 
-.dropdown-content a {
+.dropdown-content a, .dropdown-content-two a {
    /* color: white; */
   padding: 10px;
   text-decoration: none;
   display: block;
   font-size: 14px;
 }
-.dropdown-content a{
+.dropdown-content a, .dropdown-content-two a{
 font-size: 16px;
 }
-.dropdown-content a:hover{
+.dropdown-content a:hover, .dropdown-content-two a:hover{
 color:#ce5311;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content,.dropdown:hover .dropdown-content-two {display: block;}
 
 
 /* ABOUT */

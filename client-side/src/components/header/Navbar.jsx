@@ -72,14 +72,15 @@ const [show, setShow] = useState(false);
  
          </div>
 
+
           <div className="menu-nav nav-container flex justify-center gap-5 py-4 sm:flex xl:hidden lg:hidden md:hidden">
               <div className="active">
                 <div className="menu-trigger__text">
                 <IconContext.Provider value={{ color: '#000000' }} className=''>
                  <div className='hidden menu-var'>
                 <Link to='#' onClick={showSidebar} className='menu-bars'>
-                   <span className="text-[#06ffff] text-lg ">MENU</span>
-              <FaIcons.FaBars size={20}   color='#06ffff'  className='text-[#06ffff]' />
+                   <span className="text-white text-lg ">MENU</span>
+              <FaIcons.FaBars size={20}   color='white'  className='text-white' />
              
             </Link>
           
@@ -89,47 +90,49 @@ const [show, setShow] = useState(false);
             <ul className='nav-menu-items'>
               <li className='navbar-toggle'>
                 <Link to='#' onClick={showSidebar} className='menu-bars'>
-                   <span className="text-[#06ffff] text-lg">Close</span>
-                  <AiIcons.AiOutlineClose size={20}   color='#06ffff'  className='text-[#06ffff]'/>
+                   <span className="text-white text-lg">Close</span>
+                  <AiIcons.AiOutlineClose size={20}   color='white'  className='text-white'/>
                 </Link>
               </li>
 
                   <li  className='nav-text' onClick={showSidebar}>
-                    <Link to='/' className="hover:border-b-2 border-cyan-400">
-                      <span className='text-white hover:text-cyan-400'>Home</span>
+                    <Link to='/' className="hover:border-b-2 hover:text-[#ce5311]  border-[#ce5311]">
+                      <span className='text-white '>Home</span>
                     </Link>
                   </li>
 
                   <li  className='nav-text' onClick={showSidebar}>
-                    <Link to='/About' className="hover:border-b-2 border-cyan-400">
-                      <span className='text-white hover:text-cyan-400'>About</span>
+                    <Link to='/About' className="hover:border-b-2 hover:text-[#ce5311]  border-[#ce5311]">
+                      <span className='text-white '>About</span>
                     </Link>
                   </li>
 
                   <li  className='nav-text' onClick={showSidebar}>
-                    <Link to='/Projects' className="hover:border-b-2 border-cyan-400">
-                      <span className='text-white hover:text-cyan-400'>Projects</span>
+                    <Link to='/portfolios' className="hover:border-b-2 hover:text-[#ce5311]  border-[#ce5311]">
+                      <span className='text-white '>Projects</span>
                     </Link>
                   </li>
-
-                <li  className='service-nav' >
-                <div className="dropdown cursor-pointer">
-                  <div className='dropbtn'>
-                   <Link to='' className="hover:border-b-2 border-cyan-400">
-                      <span className='text-white hover:text-cyan-400'>Services</span>
-                      </Link>
-                  </div>
-                  <div className="dropdown-content">
-                      <Link onClick={showSidebar} to='/design'>Design</Link>
-                      <Link onClick={showSidebar} to='/development'>Development</Link>
-                      <Link onClick={showSidebar} to='/support'>Technical Support</Link>
-                  </div>
-                  </div>
+              <li className="nav-text-two" >
+               <Link to ='/' className='dropdown'>
+                <span className=' text-white text-lg hover:text-[#ce5311] hover:border-b-2 border-[#ce5311] px-5'>Services</span>
+                <div className="dropdown-content-two mt-8
+              flex items-center rounded-lg">
+             <div className="flex items-center justify-between px-2">
+                <div className="pt-5">
+                  <Link to ='/services/custom-software-development' className="text-black">Custom Software Development </Link>
+                  <Link to='/services/web-development' className="text-black">Web Development </Link>
+                  <Link to='/services/mobile-development' className="text-black">Mobile Development</Link>
+                  <Link to='/services/ui-ux-design-services' className="text-black">UI/UX Design</Link>
+                  <Link to='/services/technical-support' className="text-black">Technical Support</Link>
+                </div>
+              </div>
+             </div>
+          </Link>
                   </li>
 
                   <li  className='nav-text' onClick={showSidebar}>
-                    <Link to='/Contact' className="hover:border-b-2 border-cyan-400">
-                      <span className='text-white hover:text-cyan-400'>Contact</span>
+                    <Link to='/Contact' className="hover:border-b-2 hover:text-[#ce5311]  border-[#ce5311]">
+                      <span className='text-white '>Contact</span>
                     </Link>
                   </li>
                 
