@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion'
 import { useEffect } from 'react'
 import {Coffee, Factory, Film, GraduationCap, Hammer, Heart, House, Landmark} from 'lucide-react'
-import Map from '../components/Map'
+// import Map from '../components/Map'
 import ContactForm from '../components/contact/Contact'
 
 
@@ -134,7 +134,7 @@ function About({setIsHome}) {
                     </div>
                 </div>
                   <div className='relative flex flex-col items-center group transition-all transform'>
-                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHpS7RkGxAM6A/profile-displayphoto-shrink_400_400/B4EZbpoLYXGcAg-/0/1747676347596?e=1756944000&v=beta&t=pq0oOxsznlWKGYf2DTJqvRdNyBpUft2uc_LlOEQvClA" alt="pp" className='rounded-t-2xl h-[300px] w-[220px] ' />
+                    <img src="/aman.jpg" alt="pp" className='rounded-t-2xl h-[300px] w-[220px] ' />
                     <div className='absolute top-[85%] left-5 bg-white shadow-md shadow-black w-[85%] rounded-md px-2 py-4 flex flex-col items-center'>
                         <h2 className='text-xl text-orange-600 mb-2'>Amanuel Tamirat</h2>
                         <p className='italic text-lg mb-1'>Fullstack Developer</p>

@@ -1,9 +1,184 @@
 import React, { useEffect } from 'react'
 import {CodeXml, Mail, Link, CircleCheckBig, Check} from 'lucide-react'
+import { motion } from 'framer-motion';
+
+
+const techStacks = [
+    {
+        id:1,
+        title:'Language',
+        tech:[
+            {
+                id:1,
+                title:'Java',
+            },
+              {
+                id:2,
+                title:'C#',
+            },
+              {
+                id:3,
+                title:'Python',
+            },
+              {
+                id:4,
+                title:'JavaScript',
+            },
+              {
+                id:5,
+                title:'TypeScript',
+            },
+              {
+                id:6,
+                title:'CSS',
+            },
+              {
+                id:7,
+                title:'HTML',
+            },
+        ]
+    },
+     {
+        id:2,
+        title:'Framework',
+        tech:[
+            {
+                id:1,
+                title:'Node JS',
+            },
+              {
+                id:2,
+                title:'Flask',
+            },
+              {
+                id:3,
+                title:'Angular',
+            },
+              {
+                id:4,
+                title:'Spring',
+            },
+              {
+                id:5,
+                title:'React JS',
+            },
+        ]
+    },
+     {
+        id:3,
+        title:'Database',
+        tech:[
+            {
+                id:1,
+                title:'MySQL',
+            },
+              {
+                id:2,
+                title:'PostgreSQL',
+            },
+              {
+                id:3,
+                title:'Firebase',
+            },
+              {
+                id:4,
+                title:'SQLite',
+            },
+              {
+                id:5,
+                title:'MongoDB',
+            },
+             
+        ]
+    },
+     {
+        id:4,
+        title:'Mobile',
+        tech:[
+            {
+                id:1,
+                title:'Android (Java)',
+            },
+              {
+                id:2,
+                title:'React Native',
+            }
+        ]
+    },
+    {
+        id:5,
+        title:'Tools',
+        tech:[
+            {
+                id:1,
+                title:'Material UI',
+            },
+              {
+                id:2,
+                title:'Redux',
+            },
+              {
+                id:3,
+                title:'Git',
+            },
+              {
+                id:4,
+                title:'Jira',
+            },
+              {
+                id:5,
+                title:'Microservices',
+            },
+            {
+                id:6,
+                title:'NGRX'
+            },
+            {
+                id:7,
+                title:'GitHub'
+            }
+             
+        ]
+    },
+    {
+        id:6,
+        title:'Infrastructure',
+        tech:[
+            {
+                id:1,
+                title:'Docker',
+            },
+              {
+                id:2,
+                title:'Goolge Cloude',
+            },
+              {
+                id:3,
+                title:'AWS',
+            },
+              {
+                id:4,
+                title:'Railway',
+            }, 
+        ]
+    },
+    {
+        id:7,
+        title:'UIUX',
+        tech:[
+            {
+                id:1,
+                title:'Adobe XD',
+            },
+              {
+                id:2,
+                title:'Figma',
+            },     
+        ]
+    },
+]
 
 function SoftwareDevelopment({isHome,setIsHome}) {
-
-
  useEffect(()=>{
     setIsHome(false)
  },[setIsHome])
@@ -121,134 +296,93 @@ function SoftwareDevelopment({isHome,setIsHome}) {
             </div>
 
         </div>
-        <div>
-            <h1 className='text-3xl font-semibold py-20 text-gray-900'>Our tech stack</h1>
-            <div>
-              <div className='flex items-center justify-between gap-10 pb-10 '>
-                <div className='bg-[#ffffff] h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl'>
-                <h1 className='text-2xl text-black'>Language</h1>
-                </div>
-                  <div className='bg-[#ffffff] h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl gap-[20%] text-black'>
-                    <ul>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700 '/> <span className='text-xl'>Java</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>C#</span> </li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Python</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>JavaScript</span></li>
-                    </ul>
-                    <ul className=''>
-                        
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>TypeScript</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>CSS</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>HTML</span></li>
-                    </ul>
-                  </div>
-                
-                </div>
+        <div className='py-20'>
+            <motion.h1
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-3xl font-semibold text-gray-900 text-center mb-16"
+                viewport={{ once: true }}
+            >
+                Our tech stack
+            </motion.h1>
+            <div className="space-y-12">
+                {techStacks.map((stack, index) => (
+            <motion.div
+                key={stack.id}
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="flex items-center justify-between gap-10"
+            >
+                {/* Left side: Title card */}
+                <motion.div
+                initial={{ scale: 0.9, rotate: -5 }}
+                whileInView={{ scale: 1, rotate: 0 }}
+                transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
+                whileHover={{ scale: 1.05, rotate: 2 }}
+                className="bg-white h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl cursor-pointer"
+                >
+                <h2 className="text-2xl text-black font-bold">{stack.title}</h2>
+                </motion.div>
 
-                <div className='flex items-center justify-between gap-10 pb-10 text-black'>
-                <div className='bg-[#ffffff] h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl '>
-                <h1 className='text-2xl'>Framework</h1>
-                </div>
-                  <div className='bg-[#ffffff] h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl gap-[20%]'>
-                    <ul>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700 '/> <span className='text-xl'>Node JS</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Flask</span> </li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Angular</span></li>
-                    </ul>
-                    <ul className=''>  
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Spring</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>React JS</span></li>                     
-                    </ul>
-                  </div>
-                </div>
-
-                 <div className='flex items-center justify-between gap-10 pb-10 text-black'>
-                <div className='bg-[#ffffff] h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl'>
-                <h1 className='text-2xl'>Database</h1>
-                </div>
-                  <div className='bg-[#ffffff] h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl gap-[20%]'>
-                    <ul>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700 '/> <span className='text-xl'>MySQL</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>PostgreSQL</span> </li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Firebase</span></li>
-                    </ul>
-                    <ul className=''> 
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>SQLite</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>MongoDB</span></li>
-                    </ul>
-                  </div>
-                
-                </div>
-
-                 <div className='flex items-center justify-between gap-10 pb-10 text-black'>
-                <div className='bg-[#ffffff] h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl'>
-                <h1 className='text-2xl'>Mobile</h1>
-                </div>
-                  <div className='bg-[#ffffff] h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl gap-[20%]'>
-                    <ul>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700 '/> <span className='text-xl'>Android (Java)</span></li>                    
-                    </ul>
-                    <ul className=''>                     
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>React Native</span></li>                    
-                    </ul>
-                  </div>
-                
-                </div>
-
-                 <div className='flex items-center justify-between gap-10 pb-10 text-black'>
-                <div className='bg-[#ffffff] h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl'>
-                <h1 className='text-2xl'>Tools</h1>
-                </div>
-                  <div className='bg-[#ffffff] h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl gap-[20%]'>
-                    <ul>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700 '/> <span className='text-xl'>Material UI</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Redux</span> </li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Git</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Jira</span></li>
-                    </ul>
-                    <ul className=''>
-                        
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Microservices</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>NGRX</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>GitHub</span></li>
-                    </ul>
-                  </div>
-                
-                </div>
-
-                  <div className='flex items-center justify-between gap-10 pb-10 text-black'>
-                <div className='bg-[#ffffff] h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl'>
-                <h1 className='text-2xl'>Infrastructure</h1>
-                </div>
-                  <div className='bg-[#ffffff] h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl gap-[20%]'>
-                    <ul>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700 '/> <span className='text-xl'>Docker</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Goolge Cloude</span> </li>
-                    </ul>
-                    <ul className=''>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>AWS</span></li>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Railway</span></li>
-                    </ul>
-                  </div>
-                
-                </div>
-
-                  <div className='flex items-center justify-between gap-10 pb-10 text-black'>
-                <div className='bg-[#ffffff] h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl'>
-                <h1 className='text-2xl'>UIUX</h1>
-                </div>
-                  <div className='bg-[#ffffff] h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl gap-[20%]'>
-                    <ul>
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700 '/> <span className='text-xl'>Adobe XD</span></li>
-                    </ul>
-                    <ul className=''>
-                        
-                        <li className='flex gap-1'><Check size={20} className='text-orange-700'/> <span className='text-xl'>Figma</span></li>
-                    </ul>
-                  </div>
-                
-                </div>
-
+                {/* Right side: Tech list */}
+                <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 + 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl text-black overflow-hidden"
+                >
+                <motion.ul
+                    className="grid grid-cols-3 gap-5 w-full"
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={{
+                    hidden: { opacity: 0 },
+                    visible: {
+                        opacity: 1,
+                        transition: {
+                        staggerChildren: 0.1,
+                        delayChildren: 0.2,
+                        },
+                    },
+                    }}
+                    viewport={{ once: true }}
+                >
+                    {stack.tech.map((technology, techIndex) => (
+                    <motion.li
+                        key={`${stack.id}-${techIndex}`} // Unique key for each li
+                        variants={{
+                        hidden: { opacity: 0, y: 20, scale: 0.8 },
+                        visible: {
+                            opacity: 1,
+                            y: 0,
+                            scale: 1,
+                            transition: {
+                            type: 'spring',
+                            stiffness: 300,
+                            damping: 20,
+                            },
+                        },
+                        }}
+                        whileHover={{ 
+                        scale: 1.05, 
+                        x: 5,
+                        transition: { duration: 0.2 },
+                        color: '#f97316' // Orange hover for text
+                        }}
+                        className="flex items-center gap-2 text-xl font-medium"
+                    >
+                        <Check size={20} className="text-orange-700 flex-shrink-0" />
+                        <span>{technology.title}</span>
+                    </motion.li>
+                    ))}
+                </motion.ul>
+                </motion.div>
+            </motion.div>
+            ))}
             </div>
         </div>
     </div>
