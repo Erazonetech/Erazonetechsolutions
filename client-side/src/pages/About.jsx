@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion'
 import { useEffect } from 'react'
-import {Coffee, Factory, Film, GraduationCap, Hammer, Heart, House, Landmark} from 'lucide-react'
+import {Coffee, Factory, Film, Goal, GraduationCap, Hammer, Heart, House, Landmark, Telescope} from 'lucide-react'
 // import Map from '../components/Map'
 import ContactForm from '../components/contact/Contact'
 
@@ -28,26 +28,70 @@ function About({setIsHome}) {
 
     
   return (
-    <motion.div variants={variants} initial="initial" whileInView="animate" className='mb-[20rem] m-20 mt-20 text-black'>
-        <div className=' flex flex-col items-center justify-center mb-10'>
-           <h1 className='font-semibold text-4xl text-orange-600'>About</h1>
-        </div>
+    <motion.div variants={variants} initial="initial" whileInView="animate" className='mb-[20rem] m-20 mt-20 text-black '>
 
-        <div className='grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6'>
-            <div>
-                <h2 className='font-semibold text-4xl'> Welcome to Erazontech, where innovation meets excellence</h2>
+        <div className=''>
+
+            <div className='flex justify-center'>
+                <h2 className='font-semibold text-4xl bg-gradient-to-r from-blue-300 to-red-400 p-5 rounded-lg mb-16'><span className='text-5xl '>Welcome to Erazontech,</span> <br/>where innovation meets excellence</h2>
             </div>
-            <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 p-2 transition-all shadow-md shadow-orange-500'>
-                <p className='text-xl'>At Erazontech, we are committed to offering the best price guaranteed for our services, ensuring that businesses receive exceptional value without compromising on quality. Our expert team also provides in-depth financial analysis, empowering you with data-driven insights to make informed decisions and drive your business's growth and profitability.</p>
+      
+        <div className='grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10'>
+               <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6 transition-all shadow-md shadow-orange-500'>
+                <p className='text-xl'>
+                    ERAZONE technology solutions is a forward-thinking IT company dedicated to delivering innovative and customized technology solutions to businesses and organizations.
+                    With a strong focus on: 
+                    </p>
+                    <ul className='list-disc list-inside mt-2 text-lg'>
+                        <li>Software development(Web, Mobile, and Desktop Applications), 
+                        </li>
+                        <li>System integration, and digital transformation, </li>
+                        <li>IT Consulting and Strategy Development,</li>
+                        <li>Artificial Intelligence and Machine Learning Solutions,</li>
+                    </ul>
             </div>
-            <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 p-2 transition-all shadow-md shadow-orange-500'>
-                <p className='text-xl'>At Erazonetech, we are a dynamic team of tech enthusiasts and problem solvers committed to driving positive change through cutting-edge software solutions. Our passion lies in transforming ideas into reality, helping businesses thrive in the digital era.</p>
+
+            <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6  transition-all shadow-md shadow-orange-500'>
+                <p className='text-xl'>ERAZONE empowers its clients to achieve operational efficiency, scalability, and enhanced user experiences. The company prides itself on its commitment to excellence, customer-centric approach, and its ability to adapt to the evolving technological landscape. </p>
             </div>
+
+              <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6  transition-all shadow-md shadow-orange-500'>
+                <p className='text-xl'>Beyond its commercial endeavors, ERAZONE is deeply committed to social responsibility. The company believes in leveraging its expertise to make a positive impact on society, particularly in under served communities. By offering pro Bono services and volunteering its resources, ERAZONE aims to bridge the digital divide and contribute to the betterment of healthcare, education, community development and other critical sectors. </p>
+            </div>
+            
+        </div>
         </div>
         <div>
+          
+          <div className='grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10 my-20 '>
+            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg'>
+                <div className=''>
+                    <h2 className='text-xl font-semibold mb-4'>Our Mission</h2>
+                    <Goal color='#f97316' size={80}/>
+                </div>
+                <p className='w-[70%]'>At Erazone Technology Solutions, our mission is to design, develop, and deliver high-impact digital services that drive business growth. We are committed to combining creativity, technology, and strategy to provide our clients with cutting-edge web, software, and marketing solutions that meet their evolving needs.</p>
+            </div>
+
+            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg'>
+                <div className=''>
+                    <h2 className='text-xl font-semibold mb-4'>Our Vision</h2>
+                    <Telescope color='#f97316' size={80}/>
+                </div>
+                <p className='w-[70%]'>To be a globally recognized digital agency known for excellence in innovation, integrity, and impactful solutions.</p>
+            </div>
+
+            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg'>
+                <div className=''>
+                    <h2 className='text-xl font-semibold mb-4'>Our Goal</h2>
+                    <Goal color='#f97316' size={80}/>
+                </div>
+                <p className='w-[70%]'>Delivering forward-thinking technology that produces outstanding results for our clients. Investing in our team's knowledge and skills to fuel innovation and excellence. Earning long-term partnerships through transparent communication and a commitment to shared success. Growing our business in a way that is both profitable and socially responsible.</p>
+            </div>
+          </div>
+            
             <div className='flex flex-col items-center justify-center my-20'>
                 <h2  className='font-semibold text-4xl text-orange-600 mb-10'>Industries of Erazonetech</h2>
-                <p className='text-xl'>Atom Code specializes in designing and developing custom systems for various industries. We deliver innovative and efficient software solutions tailored to each sector's unique needs.</p>
+                <p className='text-xl text-center'>Atom Code specializes in designing and developing custom systems for various industries. We deliver innovative and efficient software solutions tailored to each sector's unique needs.</p>
             </div>
 
             <div className='grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5'>
