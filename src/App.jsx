@@ -3,8 +3,6 @@ import { useEffect, useState } from "react"
 import HomePage from "./pages/HomePage";
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Navbar from "./components/header/Navbar";
-// import Design from "./pages/service/Design";
-// import Development from "./pages/service/Development";
 import TechnicalSupport from "./pages/service/TechnicalSupport";
 import About from "./pages/About";
 import SoftwareDevelopment from "./pages/service/SoftwareDevelopment";

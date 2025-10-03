@@ -40,12 +40,12 @@ const [show, setShow] = useState(false);
             <img className="logo "  src="/logo-design.png" alt="logo"/>
             </Link>
 
-        <div className="flex gap-20 sm:hidden xl:flex lg:flex md:flex header-nav">
+        <div className="flex gap-10 sm:hidden xl:flex lg:flex md:flex header-nav">
            <Link to ='/' className='text-white hover:border-b-2 border-[#ce5311]'>    
-           <span className='text-white text-xl hover:text-[#ce5311]'>Home</span>
+           <span className='text-white text-2xl hover:text-[#ce5311]'>Home</span>
           </Link>
           <Link to ='/' className='dropdown'>
-             <span className=' text-white text-xl hover:text-[#ce5311] hover:border-b-2 border-[#ce5311] '>Services</span>
+             <span className=' text-white text-2xl hover:text-[#ce5311] hover:border-b-2 border-[#ce5311] '>Services</span>
              <div className="dropdown-content mt-8
              w-[1100%] flex items-center rounded-lg">
              <div className="flex items-center justify-between px-10">
@@ -64,10 +64,10 @@ const [show, setShow] = useState(false);
              </div>
           </Link>
           <Link to ='/portfolios' className='hover:border-b-2 border-[#ce5311]'>
-             <span className='text-white text-xl hover:text-[#ce5311]'>Portfolios</span>
+             <span className='text-white text-2xl hover:text-[#ce5311]'>Portfolios</span>
           </Link>
            <Link to ='/about' className='hover:border-b-2 border-[#ce5311]'>
-             <span className='text-white text-xl hover:text-[#ce5311]'>About</span>
+             <span className='text-white text-2xl hover:text-[#ce5311]'>About</span>
           </Link>
  
          </div>
