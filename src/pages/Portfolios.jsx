@@ -7,7 +7,7 @@ function Portfolios({setIsHome}) {
         setIsHome(false)
     },[setIsHome])
   return (
-    <div className='mt-40 mx-20 mb-20  text-black'>
+    <div className='mt-40 mx-20 mb-20  text-black projects'>
         <div className='grid lg:grid-cols-2 xl:grid-cols-2 gap-20 md:grid-cols-1 sm:grid-cols-1'>
             <div >
                 <h2 className='text-5xl font-semibold tracking-wide mb-5'>Projects that we co-created with our clients</h2>

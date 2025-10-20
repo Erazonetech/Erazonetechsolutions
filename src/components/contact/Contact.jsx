@@ -42,7 +42,7 @@ const ContactForm = () => {
       };
 
       return (
-        <div className="mt-[15%] bg-gray-100 flex flex-col items-center justify-center p-10 ">
+        <div className="mt-[15%] bg-gray-100 flex flex-col items-center justify-center p-10 contact-f">
 
           <div className='w-[50%] m-auto mt-20 text-center mb-10'>
             <h2 className='text-4xl font-semibold py-5 font-serif'>Let's Talk</h2>

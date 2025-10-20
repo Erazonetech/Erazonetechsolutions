@@ -289,9 +289,10 @@ color:#ce5311;
   .header-div{
     display: flex;
     margin: 0 5px 0 5px;
-    justify-content: space-between;
-   
-    
+    justify-content: space-between; 
+  }
+  .h-service{
+    width: 100%;
   }
   .header-nav{
     display: none;
@@ -311,9 +312,63 @@ color:#ce5311;
   }
   .home-service{
     flex-direction: column;
+    margin: 50px 20px 40px 20px;
   }
-  .home-service div{
+  .tech-stack, .abt{
+    margin: 20px;
+  }
+  .mission{
+    gap: 2px;
+    padding: 5px;
+  }
+  .vission{
+    gap: 5px;
+  }
+  .goal{
+    gap:10px
+  }
+  .indu h2{
+    text-align: center;
+  }
+  .team-m{
+    margin: 5px;
     width: 100%;
+  }
+  .members{
+    flex-direction: column;
+    margin-top: 20px;
+    gap:100px
+  }
+  .members div img{
+    width: 80%;
+  }
+  .contact-f{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .contact-f > div{
+    margin:20px;
+    width: 100%;
+  }
+  .projects{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .stack-title{
+    width: 32%;
+  }
+  .stack-title h2{
+    font-size: 16px;
+    padding: 2px;
+  }
+  .stack-list ul {
+    width: 78%;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+  .stack-list ul li{
+    font-size: 10px;
+    gap: 2px;
   }
 }
 @media (min-width:0px) and (max-width:767px){
