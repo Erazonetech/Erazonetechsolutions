@@ -28,7 +28,7 @@ function About({setIsHome}) {
 
     
   return (
-    <motion.div variants={variants} initial="initial" whileInView="animate" className='mb-[20rem] m-20 mt-20 text-black '>
+    <motion.div variants={variants} initial="initial" whileInView="animate" className='mb-[20rem] m-20 mt-20 text-black abt'>
 
         <div className=''>
 
@@ -64,7 +64,8 @@ function About({setIsHome}) {
         <div>
           
           <div className='grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10 my-20 '>
-            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg'>
+
+            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg mission'>
                 <div className=''>
                     <h2 className='text-xl font-semibold mb-4'>Our Mission</h2>
                     <Goal color='#f97316' size={80}/>
@@ -72,7 +73,7 @@ function About({setIsHome}) {
                 <p className='w-[70%]'>At Erazone Technology Solutions, our mission is to design, develop, and deliver high-impact digital services that drive business growth. We are committed to combining creativity, technology, and strategy to provide our clients with cutting-edge web, software, and marketing solutions that meet their evolving needs.</p>
             </div>
 
-            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg'>
+            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg vission'>
                 <div className=''>
                     <h2 className='text-xl font-semibold mb-4'>Our Vision</h2>
                     <Telescope color='#f97316' size={80}/>
@@ -80,7 +81,7 @@ function About({setIsHome}) {
                 <p className='w-[70%]'>To be a globally recognized digital agency known for excellence in innovation, integrity, and impactful solutions.</p>
             </div>
 
-            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg'>
+            <div className='flex items-center gap-10 bg-gray-100 p-5 text-lg rounded-lg goal'>
                 <div className=''>
                     <h2 className='text-xl font-semibold mb-4'>Our Goal</h2>
                     <Goal color='#f97316' size={80}/>
@@ -89,7 +90,7 @@ function About({setIsHome}) {
             </div>
           </div>
             
-            <div className='flex flex-col items-center justify-center my-20'>
+            <div className='flex flex-col items-center justify-center my-20 indu'>
                 <h2  className='font-semibold text-4xl text-orange-600 mb-10'>Industries of Erazonetech</h2>
                 <p className='text-xl text-center'>Atom Code specializes in designing and developing custom systems for various industries. We deliver innovative and efficient software solutions tailored to each sector's unique needs.</p>
             </div>
@@ -154,12 +155,12 @@ function About({setIsHome}) {
             </div>
 
         <div>
-            <div className='flex flex-col w-[80%] shadow-md shadow-slate-200 p-5 hover:scale-105 transition-all m-auto items-center justify-center my-20'>
+            <div className='flex flex-col w-[80%] shadow-md shadow-slate-200 p-5 hover:scale-105 transition-all m-auto items-center justify-center my-20 team-m'>
                 <h2 className='font-semibold text-4xl text-orange-600 mb-10'>Team Members</h2>
                 <p className='text-xl tracking-wide'>Our development team at Erazonetech is a group of highly skilled and passionate professionals dedicated to delivering innovative and reliable software solutions. With expertise across various technologies and platforms, we collaborate closely with clients to understand their needs and turn their ideas into functional, scalable applications. Whether it's web development, mobile apps, or complex systems, our team ensures top-quality, efficient, and secure results, helping businesses stay ahead in the fast-paced digital world.</p>
             </div>
-            <div className='flex justify-center gap-10'>
 
+            <div className='flex justify-center gap-10 members'>
                 <div className='relative flex flex-col items-center group transition-all transform'>
                     <img src="/asfawu.JPG" alt="pp" className='rounded-t-2xl h-[300px] w-[220px] ' />
                     <div className='absolute top-[85%] left-5 bg-white shadow-md shadow-black w-[85%] rounded-md px-2 py-4 flex flex-col items-center'>

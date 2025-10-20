@@ -322,7 +322,7 @@ function SoftwareDevelopment({isHome,setIsHome}) {
                 whileInView={{ scale: 1, rotate: 0 }}
                 transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
                 whileHover={{ scale: 1.05, rotate: 2 }}
-                className="bg-white h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl cursor-pointer"
+                className="bg-white h-40 flex items-center justify-center p-10 w-[20%] shadow-sm shadow-orange-800 rounded-2xl cursor-pointer stack-title"
                 >
                 <h2 className="text-2xl text-black font-bold">{stack.title}</h2>
                 </motion.div>
@@ -333,10 +333,10 @@ function SoftwareDevelopment({isHome,setIsHome}) {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 + 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white h-40 flex items-start p-6 w-[80%] shadow-sm shadow-orange-800 rounded-2xl text-black overflow-hidden"
+                className="bg-white h-40 flex items-start p-6 w-[80%] stack-list shadow-sm shadow-orange-800 rounded-2xl text-black overflow-hidden"
                 >
                 <motion.ul
-                    className="grid grid-cols-3 gap-5 w-full"
+                    className="grid grid-cols-3 gap-5 w-full "
                     initial="hidden"
                     whileInView="visible"
                     variants={{

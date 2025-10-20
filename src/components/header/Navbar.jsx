@@ -130,11 +130,11 @@ const [show, setShow] = useState(false);
           </Link>
                   </li>
 
-                  <li  className='nav-text' onClick={showSidebar}>
+                  {/* <li  className='nav-text' onClick={showSidebar}>
                     <Link to='/Contact' className="hover:border-b-2 hover:text-[#ce5311]  border-[#ce5311]">
                       <span className='text-white '>Contact</span>
                     </Link>
-                  </li>
+                  </li> */}
                 
             </ul>
           </nav>
