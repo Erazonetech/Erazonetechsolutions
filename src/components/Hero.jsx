@@ -8,7 +8,7 @@ function Hero() {
     <div className='flex justify-between px-20 mb-10 pt-52 bg-[#040404] shadow-lg shadow-[#06f3ffb8]'>
       <div className='flex flex-col'>
         <div className='hero-sec'>
-        <h1 className='uppercase text-white font-oswald font-semibold w-[700px] text-6xl'>
+        <h1 className='uppercase text-white font-serif font-semibold w-[700px] text-6xl'>
         Your digital agency <br /> in analog world
         </h1>
         </div>
