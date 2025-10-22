@@ -184,7 +184,7 @@ function SoftwareDevelopment({isHome,setIsHome}) {
  },[setIsHome])
 
   return (
-    <div className='mt-40 mx-10 mb-20'>
+    <div className='mt-40 mx-10 mb-20 font-serif'>
         <div className='flex justify-between xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-[10%] home-service'>
            <div className='mb-5'>
              <h1 className='text-5xl pb-5 text-gray-900'>Custom Software Development</h1>

@@ -5,7 +5,7 @@ import TechnologyStack from './TechnologyStack';
 function Tools() {
 
   return (
-    <div className='m-20 mt-5 tech-stack'>
+    <div className='m-20 mt-5 tech-stack font-serif'>
       <TechnologyStack/>
     </div>
   )

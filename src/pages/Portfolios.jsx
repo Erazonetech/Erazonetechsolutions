@@ -19,7 +19,7 @@ function Portfolios({setIsHome}) {
         <div className='my-10 mt-20 grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10'>
             <div className=' bg-white shadow-md shadow-slate-300  group relative transition duration-300 overflow-hidden'>
                 <div className='transition duration-0 px-10 pt-10 pb-20'>
-                    <h2 className='text-xl pb-5 font-semibold'>Stock management system </h2>
+                    <h2 className='text-xl pb-5 font-semibold font-serif'>Stock management system </h2>
                     <img className='h-[100%] rounded-3xl' src="/projects.png" alt="" />
                 </div>
 

@@ -8,7 +8,7 @@ function TechnicalSupport({setIsHome}) {
   },[setIsHome])
 
   return (
-    <div className='mt-40 mx-10  0 mb-20'>
+    <div className='mt-40 mx-10  0 mb-20 font-serif'>
        <div className='flex justify-between xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-[10%] home-service'>
            <div className='mb-10'>
              <h1 className='text-5xl pb-5 text-gray-900 mt-10'>Technical Support</h1>

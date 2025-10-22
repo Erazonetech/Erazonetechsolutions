@@ -8,7 +8,7 @@ function WebDevelopment({setIsHome}) {
  },[setIsHome])
 
   return (
-    <div className='pt-40 px-10 pb-20 bg-slate-50'>
+    <div className='pt-40 px-10 pb-20 bg-slate-50 font-serif'>
         <div className='flex justify-between xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-[10%] home-service'>
             <div className='mb-5'>
                 <h2 className='text-4xl font-semibold pb-5 text-gray-700 '>Web Development</h2>
