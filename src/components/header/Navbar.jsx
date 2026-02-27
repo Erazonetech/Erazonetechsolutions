@@ -34,7 +34,7 @@ const [show, setShow] = useState(false);
   return (
     <div className="header menu-opened overflow-hidden w-[100vw]">
 		<div className={` flex justify-between relative`}> 
-      <div className={` ${show && 'bg-black'} ${!isHome && 'bg-black'} fixed -top-10 left-0 right-0  z-[1000]  top-div h-[150px]`}>
+      <div className={` ${ 'bg-black'} ${!isHome && 'bg-black'} fixed -top-10 left-0 right-0  z-[1000]  top-div h-[150px]`}>
       <div className={`flex items-center justify-between mx-20  header-div`}>
           <Link to={'/'}>
             <img className="logo "  src="/logo-design.png" alt="logo"/>
