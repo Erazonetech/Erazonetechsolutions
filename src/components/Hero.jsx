@@ -5,7 +5,7 @@ function Hero() {
 
 
   return (
-    <div className='flex justify-between px-20 mb-10 pt-52 bg-[#e6e6e6] shadow-sm shadow-[#363a3ab8]'>
+    <div className='flex justify-between px-20 mb-10 pt-52 bg-[#e6e6e6]'>
       <div className='flex flex-col'>
         <div className='hero-sec'>
         <h1 className='uppercase text-black font-serif font-semibold w-[700px] text-6xl'>
