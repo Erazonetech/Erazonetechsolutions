@@ -146,8 +146,6 @@ const [show, setShow] = useState(false);
 		    </div>
        </div>
 		  </div>
-        
-  
 	</div>
 
     </div>
