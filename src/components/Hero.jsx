@@ -5,8 +5,8 @@ function Hero() {
 
 
   return (
-    <div className='flex justify-between px-20 mb-10 pt-52 bg-[#e6e6e6]'>
-      <div className='flex flex-col'>
+    <div className='xl:flex lg:flex justify-between xl:px-20 lg:px-20 mb-10 pt-32 pb-10 bg-[#e6e6e6]'>
+      <div className='flex flex-col mb-10'>
         <div className='hero-sec'>
         <h1 className='uppercase text-black font-serif font-semibold w-[700px] text-6xl'>
         Your digital agency <br /> in analog world
@@ -18,7 +18,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex relative">
-       <video className=' w-[40rem]'
+       <video className='hero-video w-[40rem]'
          width="" height="500"  autoPlay loop muted >
          <source src="/my-video.mp4" type="video/mp4"/>
      </video>
