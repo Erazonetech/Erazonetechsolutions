@@ -37,9 +37,9 @@ function About({setIsHome}) {
             </div>
       
         <div className='grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10'>
-               <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6 transition-all shadow-md shadow-orange-500'>
+               <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6 transition-all shadow-md shadow-black'>
                 <p className='text-xl font-serif'>
-                    ERAZONE technology solutions is a forward-thinking IT company dedicated to delivering innovative and customized technology solutions to businesses and organizations.
+                    <span className='text-orange-500'>ERAZONE</span> technology solutions is a forward-thinking IT company dedicated to delivering innovative and customized technology solutions to businesses and organizations.
                     With a strong focus on: 
                     </p>
                     <ul className='list-disc list-inside mt-2 text-lg font-serif'>
@@ -51,12 +51,12 @@ function About({setIsHome}) {
                     </ul>
             </div>
 
-            <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6  transition-all shadow-md shadow-orange-500'>
-                <p className='text-xl font-serif'>ERAZONE empowers its clients to achieve operational efficiency, scalability, and enhanced user experiences. The company prides itself on its commitment to excellence, customer-centric approach, and its ability to adapt to the evolving technological landscape. </p>
+            <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6  transition-all shadow-md shadow-black'>
+                <p className='text-xl font-serif'><span className='text-orange-500'>ERAZONE</span> empowers its clients to achieve operational efficiency, scalability, and enhanced user experiences. The company prides itself on its commitment to excellence, customer-centric approach, and its ability to adapt to the evolving technological landscape. </p>
             </div>
 
-              <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6  transition-all shadow-md shadow-orange-500'>
-                <p className='text-xl font-serif'>Beyond its commercial endeavors, ERAZONE is deeply committed to social responsibility. The company believes in leveraging its expertise to make a positive impact on society, particularly in under served communities. By offering pro Bono services and volunteering its resources, ERAZONE aims to bridge the digital divide and contribute to the betterment of healthcare, education, community development and other critical sectors. </p>
+              <div className='hover:scale-105 hover:shadow-md hover:shadow-orange-600 py-4 px-6  transition-all shadow-md shadow-black'>
+                <p className='text-xl font-serif'>Beyond its commercial endeavors, <span className='text-orange-500'>ERAZONE</span> is deeply committed to social responsibility. The company believes in leveraging its expertise to make a positive impact on society, particularly in under served communities. By offering pro Bono services and volunteering its resources, ERAZONE aims to bridge the digital divide and contribute to the betterment of healthcare, education, community development and other critical sectors. </p>
             </div>
             
         </div>
@@ -162,28 +162,28 @@ function About({setIsHome}) {
 
             <div className='flex justify-center gap-10 members'>
                 <div className='relative flex flex-col items-center group transition-all transform'>
-                    <img src="/asfawu.JPG" alt="pp" className='rounded-t-2xl h-[300px] w-[220px] ' />
-                    <div className='absolute top-[85%] left-5 bg-white shadow-md shadow-black w-[85%] rounded-md px-2 py-4 flex flex-col items-center'>
+                    <img src="/asfawu.JPG" alt="pp" className='rounded-t-2xl h-[350px] w-[250px] ' />
+                    <div className='absolute top-[85%] lg:left-0 xl:left-0 bg-white shadow-md shadow-black lg:w-[100%] xl:w-[100%] md:w-1/2 md:left-5 rounded-md px-2 py-4 flex flex-col items-center'>
                         <h2 className='text-xl text-orange-600 mb-2 font-serif'>Asfawossen Endale</h2>
                         <p className='italic text-lg mb-1 font-serif'>CEO</p>
-                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out font-serif'>Visionary with expertise in strategy team management, and driving company growth and success!</p>
+                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out font-serif tracking-normal text-lg'>Visionary with expertise in strategy team management, and driving company growth and success!</p>
                     </div>
                 </div>
 
                   <div className='relative flex flex-col items-center group transition-all transform'>
-                    <img src="nati.jpg" alt="pp" className='rounded-t-2xl h-[300px] w-[250px] ' />
-                    <div className='absolute top-[85%] left-5 bg-white shadow-md shadow-black w-[85%] rounded-md px-2 py-4 flex flex-col items-center'>
+                    <img src="nati.jpg" alt="pp" className='rounded-t-2xl h-[350px] w-[250px] ' />
+                    <div className='absolute top-[85%] lg:left-0 xl:left-0 bg-white shadow-md shadow-black lg:w-[100%] xl:w-[100%] md:w-1/2 md:left-5 rounded-md px-2 py-4 flex flex-col items-center'>
                         <h2 className='text-xl text-orange-600 mb-2 font-serif'>Natinael Bimer</h2>
                         <p className='italic text-lg mb-1 font-serif'>Software Engineer</p>
-                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out font-serif'>Skilled engineer focused on developing high-performance, sclable applications with clean, and efficient code!</p>
+                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out font-serif tracking-normal text-lg'>Skilled engineer focused on developing high-performance, sclable applications with clean, and efficient code!</p>
                     </div>
                 </div>
                   <div className='relative flex flex-col items-center group transition-all transform'>
-                    <img src="/aman.jpg" alt="pp" className='rounded-t-2xl h-[300px] w-[220px] ' />
-                    <div className='absolute top-[85%] left-5 bg-white shadow-md shadow-black w-[85%] rounded-md px-2 py-4 flex flex-col items-center'>
+                    <img src="/aman.jpg" alt="pp" className='rounded-t-2xl h-[350px] w-[250px] ' />
+                    <div className='absolute top-[85%] lg:left-0 xl:left-0 bg-white shadow-md shadow-black lg:w-[100%] xl:w-[100%] md:w-1/2 md:left-5 rounded-md px-2 py-4 flex flex-col items-center'>
                         <h2 className='text-xl text-orange-600 mb-2 font-serif'>Amanuel Tamirat</h2>
                         <p className='italic text-lg mb-1 font-serif'>Fullstack Developer</p>
-                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out font-serif'>Experienced full-stack developer with expertise in building robust and scalable web applications!</p>
+                        <p className='hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out font-serif tracking-normal text-lg'>Experienced full-stack developer with expertise in building robust and scalable web applications!</p>
                     </div>
                 </div>
                 
