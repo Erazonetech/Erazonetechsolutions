@@ -190,32 +190,28 @@ const prevImage = () => {
             </div>
         </div>
         {isOpen && (
-                 
-  <div className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center mt-10">
 
-            {/* Close Button */}
+                <>
+            
+            <div className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center mt-10">
+            <div>
+         {/* Close Button */}
             <button
             onClick={closeGallery}
-            className="absolute top-20 right-10   text-white text-4xl mb-10 z-auto"
+            className="absolute right-16 close-btn top-20 z-50 close-btn text-gray-400 text-2xl font-bold mb-10"
             >
             ✕
             </button>
-
+            </div>
             {/* Previous */}
             <button
             onClick={prevImage}
-            className="absolute left-5 text-white text-5xl"
+            className="absolute left-5 z-50 text-white text-5xl"
             >
             ‹
             </button>
 
-            {/* Image */}
-            {/* <img
-            src={currentImages[currentIndex]}
-            className="max-h-[80%] max-w-[80%] rounded-xl shadow-2xl"
-            alt=""
-            /> */}
-            <div className="relative flex items-center justify-center">
+            <div className="relative flex items-center justify-center z-10">
 
                 {loading && (
                     <div className="absolute flex items-center justify-center">
@@ -225,7 +221,7 @@ const prevImage = () => {
 
                 <img
                     src={currentImages[currentIndex]}
-                    className={`max-h-[80%] max-w-[80%] rounded-xl shadow-2xl transition-opacity duration-300 ${
+                    className={`max-h-[80%] max-w-[80%] rounded-xl shadow-2xl z-10 transition-opacity duration-300 ${
                     loading ? "opacity-0" : "opacity-100"
                     }`}
                     alt=""
@@ -235,12 +231,14 @@ const prevImage = () => {
             {/* Next */}
             <button
             onClick={nextImage}
-            className="absolute right-5 text-white text-5xl"
+            className="absolute right-5 z-50 text-white text-5xl"
             >
             ›
             </button>
 
         </div>
+                </> 
+        
         
         )}
     </div>
