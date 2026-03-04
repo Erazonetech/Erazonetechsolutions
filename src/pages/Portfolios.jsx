@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { FaSleigh } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 function Portfolios({setIsHome}) {
@@ -6,6 +7,8 @@ function Portfolios({setIsHome}) {
    const [isOpen, setIsOpen] = useState(false)
    const [currentImages, setCurrentImages] = useState([])
    const [currentIndex, setCurrentIndex] = useState(0)
+   const [loading, setLoading] = useState(false);
+
 
 
    const openGallery = (images, index = 0) => {
@@ -20,13 +23,30 @@ const closeGallery = () => {
 }
 
 const nextImage = () => {
-    setCurrentIndex((prev) => (prev + 1) % currentImages.length)
+    setLoading(true)
+    const nextIndex = (currentIndex + 1) % currentImages.length
+    // setCurrentIndex((prev) => (prev + 1) % currentImages.length)
+   const img = new Image();
+   img.src = currentImages[nextIndex];
+
+   img.onload = ()=>{
+    setCurrentIndex(nextIndex);
+    setLoading(false)
+   }
 }
 
 const prevImage = () => {
-    setCurrentIndex((prev) =>
-        (prev - 1 + currentImages.length) % currentImages.length
-    )
+     setLoading(true)
+
+    const prevIndex =
+        (currentIndex - 1 + currentImages.length) % currentImages.length
+
+    const img = new Image()
+    img.src = currentImages[prevIndex]
+    img.onload = () => {
+        setCurrentIndex(prevIndex)
+        setLoading(false)
+    }   
 }
 
     useEffect(()=>{
@@ -170,6 +190,7 @@ const prevImage = () => {
             </div>
         </div>
         {isOpen && (
+                 
   <div className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center mt-10">
 
             {/* Close Button */}
@@ -189,12 +210,28 @@ const prevImage = () => {
             </button>
 
             {/* Image */}
-            <img
+            {/* <img
             src={currentImages[currentIndex]}
             className="max-h-[80%] max-w-[80%] rounded-xl shadow-2xl"
             alt=""
-            />
+            /> */}
+            <div className="relative flex items-center justify-center">
 
+                {loading && (
+                    <div className="absolute flex items-center justify-center">
+                    <div className="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+                    </div>
+                )}
+
+                <img
+                    src={currentImages[currentIndex]}
+                    className={`max-h-[80%] max-w-[80%] rounded-xl shadow-2xl transition-opacity duration-300 ${
+                    loading ? "opacity-0" : "opacity-100"
+                    }`}
+                    alt=""
+                />
+
+                </div>
             {/* Next */}
             <button
             onClick={nextImage}
@@ -204,6 +241,7 @@ const prevImage = () => {
             </button>
 
         </div>
+        
         )}
     </div>
   )
