@@ -53,7 +53,7 @@ const [loading, setLoading] = useState(true)
        
      </Routes>
      <Footer/>
-     <Copyright/>
+     {/* <Copyright/> */}
       {/* <Index/> */}
     </BrowserRouter>
     </>
