@@ -45,7 +45,7 @@ const [show, setShow] = useState(false);
            <span className='text-black text-2xl hover:text-[#ce5311]'>Home</span>
           </Link>
           <Link to ='/' className='dropdown'>
-             <span className=' text-black text-2xl hover:text-[#ce5311] hover:border-b-2 border-[#ce5311] '>Services</span>
+             <span className=' text-black text-2xl hover:text-teal-400 hover:border-b-2 border-hover:text-teal-400 '>Services</span>
              <div className="dropdown-content mt-8
              w-[1100%] flex items-center rounded-lg">
              <div className="flex items-center justify-between px-10">
@@ -63,11 +63,11 @@ const [show, setShow] = useState(false);
               </div>
              </div>
           </Link>
-          <Link to ='/portfolios' className='hover:border-b-2 border-[#ce5311]'>
-             <span className='text-black text-2xl hover:text-[#ce5311]'>Portfolios</span>
+          <Link to ='/portfolios' className='hover:border-b-2 border-hover:teal-400'>
+             <span className='text-black text-2xl hover:text-teal-400'>Portfolios</span>
           </Link>
-           <Link to ='/about' className='hover:border-b-2 border-[#ce5311]'>
-             <span className='text-black text-2xl hover:text-[#ce5311]'>About</span>
+           <Link to ='/about' className='hover:border-b-2 border-hover:teal-400'>
+             <span className='text-black text-2xl hover:text-teal-400'>About</span>
           </Link>
  
          </div>
