@@ -387,4 +387,7 @@ color:#ce5311;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(42, 201, 233, 0.934);
   /* margin-bottom: 20px; */
+};
+.close-btn{
+  z-index: 1000;
 }
