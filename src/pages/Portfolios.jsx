@@ -64,7 +64,7 @@ const prevImage = () => {
 
         <div className='my-10 mt-20 grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10'>
             <div className=' bg-white shadow-md shadow-slate-300 relative transition duration-300 overflow-hidden'>
-                <div className='transition duration-0 px-10 pt-10 pb-20'>
+                <div className='transition-all duration-75 px-10 pt-5 pb-5 hover:scale-105'>
                     <h2 className='text-xl pb-5 font-semibold font-serif'>Stock management system </h2>
                     {/* <img className='h-[100%] rounded-3xl' src="/stock-1.jpg" alt="" /> */}
                     <img
@@ -100,7 +100,7 @@ const prevImage = () => {
             </div>
 
             <div className=' bg-white shadow-md shadow-slate-300  relative transition duration-300 overflow-hidden'>
-                <div className='transition duration-0 px-10 pt-10 pb-20'>
+                <div className='transition-all duration-75 px-10 pt-5 pb-5 hover:scale-105'>
                     <h2 className='text-xl pb-5 font-semibold'>moon home care</h2>
                     <img className='h-[100%] rounded-3xl cursor-pointer' 
                      onClick={() =>
@@ -132,7 +132,7 @@ const prevImage = () => {
             </div>
 
           <div className=' bg-white shadow-md shadow-slate-300 relative transition duration-300 overflow-hidden'>
-                <div className='transition duration-0 px-10 pt-10 pb-20'>
+                <div className='transition-all duration-75 px-10 pt-5 pb-5 hover:scale-105'>
                     <h2 className='text-xl pb-5 font-semibold'>Online food ordering menu</h2>
                     <img className='h-[100%] rounded-3xl cursor-pointer' 
                      onClick={() =>
@@ -158,17 +158,25 @@ const prevImage = () => {
                             <p className='text-md'>React, JavaScript, Firebase,Bootstrap, CSS3</p>
                         </div>
                     </div>
-                    <div className='mb-5 text-lg'>
+                    {/* <div className='mb-5 text-lg'>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa delectus minus! Ipsa molestiae voluptatibus praesentium numquam repellat veniam itaque.</p>
-                    </div>
+                    </div> */}
                     <Link to={'/'} className='bg-orange-600 rounded-l-full rounded-r-full text-white py-4 px-5'>Watch product video</Link>
                 </div>
             </div>
 
             <div className=' bg-white shadow-md shadow-slate-300 relative transition duration-300 overflow-hidden'>
-                <div className='transition duration-0 px-10 pt-10 pb-20'>
-                    <h2 className='text-xl pb-5 font-semibold'>Stock management system </h2>
-                    <img className='h-[100%] rounded-3xl' src="/projects.png" alt="" />
+                <div className='transition-all duration-75 px-10 pt-5 pb-5 hover:scale-105'>
+                    <h2 className='text-xl pb-5 font-semibold'>WSD CBE retail account management System</h2>
+                    <img className='h-[100%] rounded-3xl cursor-pointer' src="/WSD.jpg" alt="" 
+                     onClick={() =>
+                        openGallery([
+                            "/WSD.jpg",
+                            "/WSD-2.jpg",
+                           
+                        ])
+                        }
+                    />
                 </div>
 
                 <div  className='absolute top-10 left-0 hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out backdrop-blur-md h-[100%] px-10'>
@@ -182,8 +190,35 @@ const prevImage = () => {
                             <p className='text-md'>React, JavaScript, Firebase,Bootstrap, CSS3</p>
                         </div>
                     </div>
-                    <div className='mb-5 text-lg'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa delectus minus! Ipsa molestiae voluptatibus praesentium numquam repellat veniam itaque.</p>
+                    <Link to={'/'} className='bg-orange-600 rounded-l-full rounded-r-full text-white py-4 px-5'>Watch product video</Link>
+                </div>
+            </div>
+
+             <div className=' bg-white shadow-md shadow-slate-300 relative transition duration-300 overflow-hidden'>
+                <div className='transition-all duration-75 px-10 pt-5 pb-5 hover:scale-105'>
+                    <h2 className='text-xl pb-5 font-semibold'>WSD CBE legal case management system</h2>
+                    <img className='h-[100%] rounded-3xl cursor-pointer' src="/legal-1.jpg" alt="" 
+                     onClick={() =>
+                        openGallery([
+                            "/legal-1.jpg",
+                            "/legal-2.jpg",
+                            "/legal-3.jpg"
+                           
+                        ])
+                        }
+                    />
+                </div>
+
+                <div  className='absolute top-10 left-0 hidden group-hover:block group-hover:opacity-100 transform  transition-all duration-1000 ease-in-out backdrop-blur-md h-[100%] px-10'>
+                    <div className='flex gap-5 mb-5'>
+                        <div>
+                            <h2 className='text-xl font-semibold'>Timeline</h2>
+                            <p className='text-xl'>3 months</p>
+                        </div>
+                        <div>
+                            <h1  className='text-xl font-semibold'>Technologies</h1>
+                            <p className='text-md'>React, JavaScript, Firebase,Bootstrap, CSS3</p>
+                        </div>
                     </div>
                     <Link to={'/'} className='bg-orange-600 rounded-l-full rounded-r-full text-white py-4 px-5'>Watch product video</Link>
                 </div>
