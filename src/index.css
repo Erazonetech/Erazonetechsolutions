@@ -385,6 +385,8 @@ color:#ce5311;
 .hero-video {
   border-radius: 12px;
   overflow: hidden;
+  min-height: 200px;
+  max-height:fit-content;
   box-shadow: 0 20px 40px rgba(42, 201, 233, 0.934);
   /* margin-bottom: 20px; */
 };

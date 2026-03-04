@@ -17,10 +17,10 @@ function Hero() {
             <a className='text-[#343636] text-lg font-semibold ' href="#">contact@erazonetech.com</a>
         </div>
       </div>
-      <div className="flex relative">
-       <video className='hero-video w-[40rem]'
-         width="" height="500"  autoPlay loop muted >
-         <source src="/my-video.mp4" type="video/mp4"/>
+      <div className="">
+       <video className='hero-video object-fill'
+           autoPlay loop muted >
+         <source className="min-h-[200px]" src="/my-video.mp4" type="video/mp4"/>
      </video>
       </div>
     </div>
