@@ -7,7 +7,7 @@ function TechnicalSupport({ setIsHome }) {
   }, [setIsHome]);
 
   return (
-    <div className="bg-slate-950 text-slate-100 pt-32 pb-20 px-6 lg:px-20 font-serif">
+    <div className="bg-slate-950 text-slate-100 pt-36 pb-20 px-6 lg:px-20 font-serif">
       {/* HERO */}
       <div className="flex flex-col lg:flex-row justify-between items-center gap-10 home-service">
         <div className="max-w-xl">

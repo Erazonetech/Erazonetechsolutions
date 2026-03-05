@@ -66,7 +66,7 @@ function SoftwareDevelopment({ setIsHome }) {
   }, [setIsHome]);
 
   return (
-    <div className="bg-slate-900 text-slate-100 px-6 md:px-12 lg:px-20 py-24 font-serif">
+    <div className="bg-slate-900 text-slate-100 px-6 md:px-12 lg:px-20 py-24 pt-36 font-serif">
 
       {/* HERO */}
       <motion.div

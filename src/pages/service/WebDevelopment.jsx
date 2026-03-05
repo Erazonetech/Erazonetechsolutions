@@ -61,7 +61,7 @@ function WebDevelopment({ setIsHome }) {
   ];
 
   return (
-    <div className="bg-slate-900 text-slate-100 pt-32 pb-24 px-6 md:px-12 lg:px-20 font-serif">
+    <div className="bg-slate-900 text-slate-100 pt-36 pb-24 px-6 md:px-12 lg:px-20 font-serif">
 
       {/* HERO */}
       <div className="flex flex-col lg:flex-row items-center gap-16 mb-24">
