@@ -393,3 +393,47 @@ color:#ce5311;
 .close-btn{
   z-index: 1000;
 }
+
+/* Dot that follows the border */
+.border-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #f97316; /* orange-500 */
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.3s;
+}
+
+/* Only show and animate on hover */
+.group:hover .border-dot {
+  opacity: 1;
+  animation: borderRotate 3s linear infinite;
+}
+
+/* Keyframes along rectangle border */
+@keyframes borderRotate {
+  0% {
+    top: 0; left: 0;
+  }
+  25% {
+    top: 0; left: 100%;
+    transform: translateX(-100%);
+  }
+  50% {
+    top: 100%; left: 100%;
+    transform: translate(-100%, -100%);
+  }
+  75% {
+    top: 100%; left: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    top: 0; left: 0;
+    transform: translate(0,0);
+  }
+}

@@ -311,40 +311,52 @@ function About({ setIsHome }) {
       </div>
 
       {/* ===== INDUSTRIES ===== */}
-      <div className="max-w-6xl mx-auto text-center mb-20">
-        <h2 className="text-4xl font-semibold text-orange-500 mb-6">
-          Industries We Serve
-        </h2>
-        <p className="text-slate-300 max-w-2xl mx-auto">
-          We design custom systems tailored to each industry's unique needs.
-        </p>
-      </div>
+<div className="px-6 sm:px-10 lg:px-0">
 
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-28">
-        {[
-          { icon: GraduationCap, title: "Education" },
-          { icon: Heart, title: "Healthcare" },
-          { icon: Landmark, title: "Banking" },
-          { icon: Factory, title: "Manufacturing" },
-          { icon: House, title: "Real Estate" },
-          { icon: Film, title: "Entertainment" },
-          { icon: Hammer, title: "Construction" },
-          { icon: Coffee, title: "Food & Beverage" },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className="bg-slate-900 p-6 rounded-xl text-center hover:bg-orange-600 transition duration-300 group"
-          >
-            <item.icon
-              size={40}
-              className="mx-auto mb-4 text-orange-500 group-hover:text-white transition"
-            />
-            <h3 className="text-lg font-semibold group-hover:text-white">
-              {item.title}
-            </h3>
-          </div>
-        ))}
-      </div>
+  {/* Title */}
+  <div className="max-w-6xl mx-auto text-center mb-14 md:mb-20">
+    <h2 className="text-3xl md:text-4xl font-semibold text-orange-500 mb-4 md:mb-6">
+      Industries We Serve
+    </h2>
+
+    <p className="text-slate-300 text-sm md:text-base max-w-xl md:max-w-2xl mx-auto">
+      We design custom systems tailored to each industry's unique needs.
+    </p>
+  </div>
+
+ {/* Grid */}
+<div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-16 md:mb-24">
+
+  {[
+    { icon: GraduationCap, title: "Education" },
+    { icon: Heart, title: "Healthcare" },
+    { icon: Landmark, title: "Banking" },
+    { icon: Factory, title: "Manufacturing" },
+    { icon: House, title: "Real Estate" },
+    { icon: Film, title: "Entertainment" },
+    { icon: Hammer, title: "Construction" },
+    { icon: Coffee, title: "Food & Beverage" },
+  ].map((item, index) => (
+    
+    <div
+      key={index}
+      className="bg-slate-900 p-4 sm:p-5 md:p-6 rounded-xl text-center hover:bg-orange-600 transition duration-300 group w-full"
+    >
+      <item.icon
+        size={28}
+        className="mx-auto mb-3 sm:mb-4 text-orange-500 group-hover:text-white transition"
+      />
+
+      <h3 className="text-sm sm:text-base md:text-lg font-semibold group-hover:text-white leading-snug">
+        {item.title}
+      </h3>
+    </div>
+
+  ))}
+
+</div>
+
+</div>
 
       {/* ===== TEAM ===== */}
       <div className="max-w-6xl mx-auto text-center mb-20">

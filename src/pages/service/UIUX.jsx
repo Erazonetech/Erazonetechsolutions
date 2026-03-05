@@ -1,100 +1,102 @@
-import { AppWindow, Code, Frame, ListChecks, MonitorCheck, Route } from 'lucide-react'
-import React, { useEffect } from 'react'
+import { AppWindow, Code, Frame, ListChecks, MonitorCheck, Route } from "lucide-react";
+import React, { useEffect } from "react";
 
-function UIUX({setIsHome}) {
-
-  useEffect(()=>{
-    setIsHome(false)
-  },[setIsHome])
+function UIUX({ setIsHome }) {
+  useEffect(() => {
+    setIsHome(false);
+  }, [setIsHome]);
 
   return (
-    <div className='pt-40 px-10 pb-20 bg-slate-50 font-serif'>
-         <div className='flex justify-between xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-[10%] home-service'>
-           <div className='mb-5'>
-             <h1 className='text-5xl pb-5 text-gray-900 mt-10'>Mobile Development</h1>
-            <p className='text-xl text-gray-700 mt-5'>We deliver more than just apps. We deliver experiences. Our fast, responsive and highly scalable mobile app development will help you get ahead of the curve in no time!</p>
-           </div>
-           <img className='bg-[#afaaaa] transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-orange-800 rounded-2xl h-[350px]' src="/ui-ux.webp" alt="Mobile dev" />
+    <div className="bg-slate-950 text-slate-100 pt-32 px-6 md:px-10 pb-20 font-serif">
+
+      {/* HERO */}
+      <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-10 home-service">
+        <div className="mb-5">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl pb-5 text-slate-100 mt-10">
+            UI/UX Design
+          </h1>
+          <p className="text-lg md:text-xl text-slate-300 mt-5">
+            We deliver more than just apps. We deliver experiences. Our fast, responsive and highly scalable UI/UX design helps you get ahead of the curve.
+          </p>
         </div>
-          <div className='mt-10'>
-            <div className='flex flex-col items-center justify-center mb-10'>
-            <h1 className='font-semibold text-5xl text-black mb-2'>What We Do</h1>
-            <p className='text-black text-xl'>Exceptional UI/UX Designs That Enhance User Engagement and Deliver Seamless Experiences Across Platforms.</p>
-            </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-5'>
-                <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <Route  size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold'>User Journey Mapping</h2>
-                    <p className='tracking-wide'>Creating detailed user personas from in-depth research to craft a comprehensive user journey map.</p>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <Frame  size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold'>Rapid Prototyping</h2>
-                    <p className='tracking-wide'>Transforming your concepts into interactive prototypes and refining them with feedback-driven wireframes to minimize errors.</p>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <AppWindow size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold'>UX Design</h2>
-                    <p className='tracking-wide'>Providing cutting-edge technology to create immersive user experiences while addressing both current and future challenges.</p>
-                </div>
+        <img
+          className="rounded-2xl bg-slate-800 shadow-xl shadow-teal-400 max-h-[360px]"
+          src="/ui-ux.webp"
+          alt="UI/UX Design"
+        />
+      </div>
 
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <MonitorCheck size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold'>UI Design</h2>
-                    <p className='tracking-wide'>Enhancing user interaction by simplifying complex designs and delivering an intuitive and user-friendly interface.</p>
-                </div>
-
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <Code size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold'>Development</h2>
-                    <p className='tracking-wide'>Collaborating between skilled designers and developers to create the highest quality products for our clients.</p>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <ListChecks size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold'>Testing</h2>
-                    <p className='tracking-wide'>Implementing improvements based on business needs through rigorous QA testing and data-driven insights.</p>
-                </div>
-            </div>
+      {/* WHAT WE DO */}
+      <div className="mt-10">
+        <div className="flex flex-col items-center justify-center mb-10 text-center">
+          <h1 className="font-semibold text-4xl md:text-5xl text-slate-100 mb-2">What We Do</h1>
+          <p className="text-slate-300 text-lg md:text-xl max-w-2xl">
+            Exceptional UI/UX Designs that enhance user engagement and deliver seamless experiences across platforms.
+          </p>
         </div>
 
-         <div className='mt-20'>
-            <div className='flex flex-col justify-center items-center mb-10'>
-            <h1 className='font-semibold text-5xl text-black '>How we do it</h1>
-            <p className='text-gray-800 text-xl pt-2 text-center'>Our expertise lies in creating user-centered UI/UX designs through in-depth research and collaboration. We deliver intuitive, visually appealing experiences that meet the needs of diverse industries.</p>
-            </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-2 gap-5'>
-          
-                <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <h2 className='py-5 text-2xl font-semibold'>Discovery</h2>
-                   <ul className='flex flex-col gap-4'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> Understanding your business and it’s pain points</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Interviews & observations</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> Functional requirements</span></li>
-                   </ul>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <h2 className='py-5 text-2xl font-semibold'>Wireframes</h2>
-                   <ul className='flex flex-col gap-4'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Concept sketching</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>System/Process flow</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> Information architecture</span></li>           
-                   </ul>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <h2 className='py-5 text-2xl font-semibold'>Build and Iterate</h2>
-                   <ul className='flex flex-col gap-4'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Interaction design</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>High-fidelity mockups</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Interactive prototypes</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>UI Style guide/brand identity</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Operational Testing</span></li>
-                   </ul>
-                </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-5">
+  {[
+    { icon: Route, title: "User Journey Mapping", text: "Creating detailed user personas from in-depth research to craft a comprehensive user journey map." },
+    { icon: Frame, title: "Rapid Prototyping", text: "Transforming concepts into interactive prototypes and refining them with feedback-driven wireframes to minimize errors." },
+    { icon: AppWindow, title: "UX Design", text: "Providing cutting-edge technology to create immersive user experiences while addressing both current and future challenges." },
+    { icon: MonitorCheck, title: "UI Design", text: "Enhancing user interaction by simplifying complex designs and delivering an intuitive and user-friendly interface." },
+    { icon: Code, title: "Development", text: "Collaborating between skilled designers and developers to create the highest quality products for our clients." },
+    { icon: ListChecks, title: "Testing", text: "Implementing improvements based on business needs through rigorous QA testing and data-driven insights." },
+  ].map((item, index) => {
+    const Icon = item.icon;
+    return (
+      <div
+        key={index}
+        className="relative group bg-slate-900 p-8 rounded-lg shadow-sm shadow-gray-800 hover:shadow-lg transition overflow-hidden"
+      >
+        {/* Dot moving along border */}
+        <span className="border-dot"></span>
 
-            </div>
+        <Icon size={40} className="text-orange-500 relative z-10" />
+        <h2 className="py-5 text-2xl font-semibold text-slate-100 relative z-10">{item.title}</h2>
+        <p className="text-slate-300 relative z-10">{item.text}</p>
+      </div>
+    );
+  })}
+</div>
+      </div>
+
+      {/* HOW WE DO IT */}
+      <div className="mt-20">
+        <div className="flex flex-col justify-center items-center mb-10 text-center">
+          <h1 className="font-semibold text-4xl md:text-5xl text-slate-100">How We Do It</h1>
+          <p className="text-slate-300 text-lg md:text-xl pt-2 max-w-2xl text-center">
+            Our expertise lies in creating user-centered UI/UX designs through in-depth research and collaboration. We deliver intuitive, visually appealing experiences that meet the needs of diverse industries.
+          </p>
         </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-2 gap-5">
+          {[
+            { title: "Discovery", steps: ["Understanding your business and its pain points", "Interviews & observations", "Functional requirements"] },
+            { title: "Wireframes", steps: ["Concept sketching", "System/Process flow", "Information architecture"] },
+            { title: "Build and Iterate", steps: ["Interaction design", "High-fidelity mockups", "Interactive prototypes", "UI Style guide/brand identity", "Operational Testing"] },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-slate-900 p-8 rounded-lg shadow-sm shadow-gray-800 hover:shadow-lg transition"
+            >
+              <h2 className="py-5 text-2xl font-semibold text-slate-100">{item.title}</h2>
+              <ul className="flex flex-col gap-4">
+                {item.steps.map((step, i) => (
+                  <li key={i} className="text-slate-300 text-lg flex items-center">
+                    <span className="h-3 w-3 bg-orange-600 rounded-full inline-block mr-2"></span>
+                    {step}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
-  )
+  );
 }
 
-export default UIUX
+export default UIUX;

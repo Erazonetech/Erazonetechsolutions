@@ -57,15 +57,15 @@ function Service() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full bg-slate-900 py-24 px-20 flex gap-20">
+    <div className="w-full bg-slate-900 py-20 px-6 md:px-12 lg:px-20 flex flex-col lg:flex-row gap-16">
 
       {/* LEFT SIDE */}
-      <div className="w-1/2 flex flex-col justify-start">
-        <h1 className="text-slate-100 text-5xl font-semibold mb-6 tracking-wide">
+      <div className="w-full lg:w-1/2">
+        <h1 className="text-slate-100 text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 tracking-wide">
           OUR SERVICES
         </h1>
 
-        <p className="text-slate-300 text-lg leading-relaxed">
+        <p className="text-slate-300 text-base md:text-lg leading-relaxed">
           ERAZONE Web Agency takes pride in delivering inventive and adaptable
           solutions tailored to your specific requirements. We collaborate
           closely with our clients to establish open and constructive
@@ -74,7 +74,7 @@ function Service() {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="w-1/2 flex flex-col gap-6">
+      <div className="w-full lg:w-1/2 flex flex-col gap-6">
 
         {service.map((item) => (
           <motion.div
@@ -84,7 +84,7 @@ function Service() {
             onClick={() => setActiveIndex(item.id)}
             className={`
               rounded-2xl
-              p-6
+              p-5 md:p-6
               cursor-pointer
               transition-all duration-300
               border
@@ -96,7 +96,7 @@ function Service() {
             `}
           >
             <div className="flex justify-between items-center">
-              <h2 className="text-xl text-slate-100 tracking-wide">
+              <h2 className="text-lg md:text-xl text-slate-100 tracking-wide">
                 {item.title}
               </h2>
 
