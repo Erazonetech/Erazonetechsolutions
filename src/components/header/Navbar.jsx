@@ -41,14 +41,14 @@ const [show, setShow] = useState(false);
             </Link>
 
         <div className="flex gap-10 sm:hidden xl:flex lg:flex md:flex header-nav">
-           <Link to ='/' className='text-white hover:border-b-2 border-[#cca692]'>    
-           <span className='text-black text-2xl hover:text-[#ce5311]'>Home</span>
+           <Link to ='/' className='text-white hover:border-b-2 border-gray-00'>    
+           <span className='text-black text-2xl hover:text-teal-400'>Home</span>
           </Link>
           <Link to ='/' className='dropdown'>
              <span className=' text-black text-2xl hover:text-teal-400 hover:border-b-2 border-hover:text-teal-400 '>Services</span>
              <div className="dropdown-content mt-8
              w-[1100%] flex items-center rounded-lg">
-             <div className="flex items-center justify-between px-10">
+             <div className="flex items-center px-10 gap-[10%]">
                 <div className="w-[50%] text-gray-black flex flex-col items-center p-5">
                   <h1 className="text-2xl font-semibold text-black p-5">Our Services</h1>
                   <p className="text-black text-xl">At Erazone, we provide wide range of IT services tailored to meet your business needs. Our skilled professionals are dedicated to delivering exceptional results that exceed your expections</p>

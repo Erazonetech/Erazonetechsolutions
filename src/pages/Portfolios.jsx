@@ -373,7 +373,7 @@ function Portfolios({ setIsHome }) {
         ].map((project, index) => (
           <div
             key={index}
-            className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-orange-500 transition duration-300"
+            className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-teal-400 transition duration-300"
           >
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-4">
@@ -381,7 +381,7 @@ function Portfolios({ setIsHome }) {
               </h3>
 
               <img
-                onClick={() => openGallery(project.images)}
+                // onClick={() => openGallery(project.images)}
                 src={project.images[0]}
                 alt={project.title}
                 className="rounded-xl cursor-pointer w-full h-64 object-cover hover:scale-105 transition duration-300"
@@ -390,7 +390,7 @@ function Portfolios({ setIsHome }) {
 
             <div className="px-6 pb-6">
               <Link
-                to="/"
+                 onClick={() => openGallery(project.images)}
                 className="inline-block bg-orange-600 hover:bg-orange-700 transition text-white px-6 py-2 rounded-full"
               >
                 View Project
@@ -402,11 +402,11 @@ function Portfolios({ setIsHome }) {
 
       {/* ===== MODAL GALLERY ===== */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center px-4">
+        <div className="fixed inset-0 bg-black/90 backdrop-blur-md z-20 flex items-center justify-center pt-20 px-4">
           {/* Close */}
           <button
             onClick={closeGallery}
-            className="absolute top-6 right-6 text-white text-3xl"
+            className="absolute top-24 right-12 text-white z-50 text-3xl"
           >
             ✕
           </button>
@@ -414,7 +414,7 @@ function Portfolios({ setIsHome }) {
           {/* Prev */}
           <button
             onClick={prevImage}
-            className="absolute left-4 md:left-10 text-white text-4xl"
+            className="absolute z-50 left-4 text-white text-4xl"
           >
             ‹
           </button>
@@ -429,7 +429,7 @@ function Portfolios({ setIsHome }) {
             <img
               src={currentImages[currentIndex]}
               alt=""
-              className={`max-h-[80vh] w-auto rounded-xl transition-opacity duration-300 ${
+              className={`max-h-[80vh] w-[80%] rounded-xl transition-opacity duration-300 ${
                 loading ? "opacity-0" : "opacity-100"
               }`}
             />
@@ -438,7 +438,7 @@ function Portfolios({ setIsHome }) {
           {/* Next */}
           <button
             onClick={nextImage}
-            className="absolute right-4 md:right-10 text-white text-4xl"
+            className="absolute right-4 z-50 text-white text-4xl"
           >
             ›
           </button>

@@ -1,150 +1,187 @@
-import {  Expand, Shapes, ShieldCheck, Smartphone, Table2, Wrench } from 'lucide-react'
-import React, { useEffect } from 'react'
+import { Expand, Shapes, ShieldCheck, Smartphone, Table2, Wrench } from "lucide-react";
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 
-function MobileDev({setIsHome}) {
+function MobileDev({ setIsHome }) {
+  useEffect(() => {
+    setIsHome(false);
+  }, [setIsHome]);
 
-
-
-  useEffect(()=>{
-     setIsHome(false)
-  },[setIsHome])
-
-
+  const cardAnimation = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
-    
-    <div className='mt-40 mx-10 mb-20 font-serif'>
-         <div className='flex justify-between xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-[10%] home-service'>
-           <div className='mb-5'>
-             <h1 className='text-5xl pb-5 text-gray-900 mt-10 font-serif'>Mobile Development</h1>
-            <p className='text-xl text-gray-700 mt-5 font-serif'>We deliver more than just apps. We deliver experiences. Our fast, responsive and highly scalable mobile app development will help you get ahead of the curve in no time!</p>
-           </div>
-           <img className='bg-[#afaaaa] transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-orange-800 rounded-2xl h-[350px]' src="/mobile-dev.png" alt="Mobile dev" />
+    <div className="bg-slate-950 text-slate-100 pt-32 px-6 md:px-10 pb-20 font-serif">
+
+      {/* HERO */}
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-10 home-service">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={cardAnimation}
+          transition={{ duration: 0.6 }}
+          className="max-w-xl"
+        >
+          <h1 className="text-4xl md:text-5xl pb-5 text-slate-100 font-serif">
+            Mobile Development
+          </h1>
+
+          <p className="text-lg md:text-xl text-slate-300 mt-3">
+            We deliver more than just apps. Our fast, responsive and highly scalable mobile app development helps your business stay ahead.
+          </p>
+        </motion.div>
+
+        <motion.img
+          src="/mobile-dev.png"
+          alt="Mobile dev"
+          className="rounded-2xl
+           bg-slate-800 
+          shadow-xl 
+          shadow-teal-200 max-h-[360px]"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        />
+      </div>
+
+      {/* MOBILE SERVICES */}
+      <div className="mt-20">
+        <div className="flex flex-col justify-center items-center mb-12 text-center">
+          <h1 className="font-semibold text-3xl md:text-5xl text-slate-100 font-serif">
+            Mobile App Development Services
+          </h1>
+          <p className="text-slate-300 text-lg pt-2 max-w-xl">
+            Erazone provides innovative mobile solutions with rich user experiences.
+          </p>
         </div>
 
-        <div className='mt-20'>
-            <div className='flex flex-col justify-center items-center mb-10'>
-            <h1 className='font-semibold text-5xl text-black font-serif'>Mobile App Development Services</h1>
-            <p className='text-gray-800 text-lg pt-2 font-serif'>Erazone provides you with innovative app solutions with enrich experiences</p>
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* ANDROID */}
+          <motion.div
+            variants={cardAnimation}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="bg-slate-900 p-6 md:p-10 shadow-sm shadow-gray-800 rounded-lg hover:shadow-lg flex flex-col md:flex-row gap-6"
+          >
+            <div>
+              <img className="w-28 h-24 rounded-xl mb-3" src="/android.jpeg" alt="android" />
+              <h2 className="text-xl font-semibold text-slate-100">Android App Development</h2>
             </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 sm:grid-cols-1 gap-5'>
-          
-                <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg flex justify-between gap-5'>
-                    <div className=''>
-                        <img className='w-28 h-24 rounded-e-xl' src="/android.jpeg" alt="android" />
-                        <h2 className='text-xl font-semibold font-serif'>Android App Development</h2>
-                    </div>
-                   <ul className='flex flex-col gap-4 sm-p'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1 font-serif'>Android Mobile App Development</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Android Tablet App Development</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Android Wear App Development</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Android TV App Development</span></li>
-                   </ul>
-                </div>
 
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg flex justify-between gap-5'>
-                    <div className=''>
-                        <img className='w-28 h-24 rounded-l-xl ' src="/ios.jpeg" alt="android" />
-                        <h2 className='text-xl font-semibold'>IOS App Development</h2>
-                    </div>
-                   <ul className='flex flex-col gap-4 sm-p'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> iPhone App Development</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> iPad App Development</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Apple Watch App Development</span></li>
-                   </ul>
-                </div>
+            <ul className="flex flex-col gap-3">
+              {[
+                "Android Mobile App Development",
+                "Android Tablet App Development",
+                "Android Wear App Development",
+                "Android TV App Development",
+              ].map((item, i) => (
+                <li key={i} className="flex items-center text-slate-300">
+                  <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* IOS */}
+          <motion.div
+            variants={cardAnimation}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="bg-slate-900 p-6 md:p-10 shadow-sm shadow-gray-800 rounded-lg hover:shadow-lg flex flex-col md:flex-row gap-6"
+          >
+            <div>
+              <img className="w-28 h-24 rounded-xl mb-3" src="/ios.jpeg" alt="ios" />
+              <h2 className="text-xl font-semibold text-slate-100">iOS App Development</h2>
             </div>
+
+            <ul className="flex flex-col gap-3">
+              {[
+                "iPhone App Development",
+                "iPad App Development",
+                "Apple Watch App Development",
+              ].map((item, i) => (
+                <li key={i} className="flex items-center text-slate-300">
+                  <span className="w-2 h-2 bg-orange-600 rounded-full mr-2"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* WHAT WE DO */}
+      <div className="mt-20">
+        <div className="flex flex-col items-center text-center mb-12">
+          <h1 className="font-semibold text-3xl md:text-5xl text-slate-100">
+            What We Do
+          </h1>
+          <p className="text-slate-300 text-lg md:text-xl mt-2">
+            World class mobile apps featured in app stores
+          </p>
         </div>
 
-          <div className='mt-10'>
-            <div className='flex flex-col items-center justify-center mb-10'>
-            <h1 className='font-semibold text-5xl text-black mb-2'>What We Do</h1>
-            <p className='text-black text-xl'>World Class Mobile Apps That Are Featured In App Stores With High Ratings</p>
-            </div>
-            <div className='grid xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1 gap-5'>
-                <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <Smartphone  size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold'>Complete Mobile App Development</h2>
-                    <p className='tracking-wide font-serif'>From start to design, development, support and maintenance, we provide End to End development.</p>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <Table2  size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold font-serif'>Extensive UI, Practical UX</h2>
-                    <p className='tracking-wide font-serif'>Enriching client’s User Experience by offering uncomplicated, creative yet focused User Interface.</p>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <ShieldCheck size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold'>Security and Privacy</h2>
-                    <p className='tracking-wide'>Satisfying clients by ensuring that all work is done under Non-Disclosure Agreements, prioritizing client confidentiality.</p>
-                </div>
-
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <Expand size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold font-serif'>Room For Expandability</h2>
-                    <p className='tracking-wide font-serif'>With dynamic trends and changes in technology, scalability is absolutely a must for apps.</p>
-                </div>
-
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <Shapes size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold font-serif'>Agile Working Pattern</h2>
-                    <p className='tracking-wide font-serif'>An agile working pattern and delivery method is adopted to guarantee prompt delivery and make room for any changes.</p>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <Wrench size={40} className='text-orange-500' />
-                    <h2 className='py-5 text-2xl font-semibold font-serif'>Support and Rescue Missions</h2>
-                    <p className='tracking-wide font-serif'>Maintenance and support of your application and additional facility of rescuing any pre-existing projects that have not been delivered yet.</p>
-                </div>
-            </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              icon: Smartphone,
+              title: "Complete Mobile App Development",
+              text: "End-to-end development from design to deployment.",
+            },
+            {
+              icon: Table2,
+              title: "Extensive UI, Practical UX",
+              text: "Simple and powerful user experiences.",
+            },
+            {
+              icon: ShieldCheck,
+              title: "Security and Privacy",
+              text: "Projects protected under strict confidentiality.",
+            },
+            {
+              icon: Expand,
+              title: "Room For Expandability",
+              text: "Apps built with scalability in mind.",
+            },
+            {
+              icon: Shapes,
+              title: "Agile Working Pattern",
+              text: "Flexible and fast development cycles.",
+            },
+            {
+              icon: Wrench,
+              title: "Support and Rescue Missions",
+              text: "Maintenance and rescue for unfinished projects.",
+            },
+          ].map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <motion.div
+                key={index}
+                variants={cardAnimation}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+                className="bg-slate-900 p-8 shadow-sm shadow-gray-800 rounded-lg hover:shadow-lg transition"
+              >
+                <Icon size={36} className="text-orange-500" />
+                <h2 className="py-4 text-xl font-semibold text-slate-100">
+                  {item.title}
+                </h2>
+                <p className="text-slate-300">{item.text}</p>
+              </motion.div>
+            );
+          })}
         </div>
-
-         <div className='mt-20'>
-            <div className='flex flex-col justify-center items-center mb-10'>
-            <h1 className='font-semibold text-5xl text-black '>How we do it</h1>
-            <p className='text-gray-800 text-lg pt-2'>Simple to comprehend, we follow the standard procedure</p>
-            </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 sm:grid-cols-2 gap-5'>
-          
-                <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <h2 className='py-5 text-2xl font-semibold'>Discovery</h2>
-                   <ul className='flex flex-col gap-4'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Discovery Workshop</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Goal Setting</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> Prototyping</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Project Plan</span></li>
-                   </ul>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <h2 className='py-5 text-2xl font-semibold'>Execution</h2>
-                   <ul className='flex flex-col gap-4'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Architecture and Design</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> Backend Development</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>APIs & Integrations</span></li>           
-                   </ul>
-                </div>
-                  <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <h2 className='py-5 text-2xl font-semibold'>QA Testing</h2>
-                   <ul className='flex flex-col gap-4'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Go Live</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> Project Launch</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>  User Feedback</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Monitoring</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Operational Testing</span></li>
-                   </ul>
-                </div>
-                     <div className='bg-white p-10  text-black shadow-sm shadow-gray-500 rounded-lg hover:shadow-lg'>
-                    <h2 className='py-5 text-2xl font-semibold'>Support</h2>
-                   <ul className='flex flex-col gap-4'>
-                    <li className='text-lg'><button className=' h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> SLA Support</span></li>
-                     <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> Operational support</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'> On-going Support</span></li>
-                    <li className='text-lg'><button className='h-3 w-3 bg-orange-600 rounded-full'></button><span className='px-1'>Feedback Integration</span></li>
-                   </ul>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-
-  )
+  );
 }
 
-export default MobileDev
+export default MobileDev;
