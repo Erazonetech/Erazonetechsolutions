@@ -235,7 +235,7 @@ function About({ setIsHome }) {
       variants={variants}
       initial="initial"
       animate="animate"
-      className="bg-slate-950 text-slate-100 px-6 lg:px-20 py-24"
+      className="bg-slate-950 text-slate-100 pt-36 px-6 lg:px-20 py-24"
     >
       {/* ===== HEADER ===== */}
       <div className="max-w-6xl mx-auto text-center mb-24">
