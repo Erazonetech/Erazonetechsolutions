@@ -7,7 +7,7 @@ function UIUX({ setIsHome }) {
   }, [setIsHome]);
 
   return (
-    <div className="bg-slate-950 text-slate-100 pt-32 px-6 md:px-10 pb-20 font-serif">
+    <div className="bg-slate-950 text-slate-100 pt-36 px-6 md:px-10 pb-20 font-serif">
 
       {/* HERO */}
       <div className="flex flex-col xl:flex-row lg:flex-row md:flex-col sm:flex-col gap-10 home-service">
