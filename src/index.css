@@ -380,6 +380,10 @@ color:#ce5311;
   .sm-p li{
     font-size: 12px;
   }
+  .close-btn{
+  z-index: 1000;
+  top: 150px;
+}
 }
 
 .hero-video {
@@ -390,9 +394,7 @@ color:#ce5311;
   box-shadow: 0 20px 40px rgba(42, 201, 233, 0.934);
   /* margin-bottom: 20px; */
 };
-.close-btn{
-  z-index: 1000;
-}
+
 
 /* Dot that follows the border */
 .border-dot {

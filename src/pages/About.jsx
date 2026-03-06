@@ -378,7 +378,7 @@ function About({ setIsHome }) {
           {
             name: "Natinael Bimer",
             role: "Software Engineer",
-            img: "/nati.jpg",
+            img: "/nati-2.jpg",
           },
           {
             name: "Amanuel Tamirat",
@@ -393,7 +393,7 @@ function About({ setIsHome }) {
             <img
               src={member.img}
               alt={member.name}
-              className="w-full h-[350px] object-cover"
+              className="w-full h-[350px] object-contain rounded-3xl"
             />
             <div className="p-6 text-center">
               <h3 className="text-xl font-semibold text-orange-500 mb-2">
