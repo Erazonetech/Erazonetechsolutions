@@ -26,22 +26,22 @@ function StatsSection() {
 const stats = [
   {
     icon: Briefcase,
-    number: 100,
+    number: 46,
     label: "Successful Projects",
   },
   {
     icon: Smile,
-    number: 75,
+    number: 21,
     label: "Happy Clients",
   },
   {
     icon: Calendar,
-    number: 10,
+    number: 4,
     label: "Years of Experience",
   },
   {
     icon: Users,
-    number: 20,
+    number: 12,
     label: "Expert Team Members",
   },
 ];
