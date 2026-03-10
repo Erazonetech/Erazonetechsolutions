@@ -75,12 +75,12 @@ function Footer() {
         {/* Company Info */}
         <div>
           <img
-            className="h-16 w-auto mb-6"
+            className="h-auto -mt-14 w-auto"
             src="/logo-design.png"
             alt="ERAZONE Logo"
           />
 
-          <p className="text-slate-400 leading-relaxed">
+          <p className="text-slate-400 leading-relaxed -mt-10">
             Welcome to ERAZONE, where innovation meets excellence. We craft
             scalable software solutions designed to empower businesses and
             deliver transformative digital experiences.
@@ -155,7 +155,7 @@ function Footer() {
             Connect With Us
           </h2>
 
-          <div className="flex gap-5">
+          <div className="flex gap-5 ml-2">
             <Instagram className="text-slate-400 hover:text-teal-400 hover:scale-110 transition cursor-pointer" />
             <Linkedin className="text-slate-400 hover:text-teal-400 hover:scale-110 transition cursor-pointer" />
             <Facebook className="text-slate-400 hover:text-teal-400 hover:scale-110 transition cursor-pointer" />

@@ -53,12 +53,12 @@ const [show, setShow] = useState(false);
                   <h1 className="text-2xl font-semibold text-black p-5">Our Services</h1>
                   <p className="text-black text-xl">At Erazone, we provide wide range of IT services tailored to meet your business needs. Our skilled professionals are dedicated to delivering exceptional results that exceed your expections</p>
                 </div>
-                <div className="pt-10">
-                  <Link to ='/services/custom-software-development' className="text-black">Custom Software Development </Link>
-                  <Link to='/services/web-development' className="text-black">Web Development </Link>
-                  <Link to='/services/mobile-development' className="text-black">Mobile Development</Link>
-                  <Link to='/services/ui-ux-design-services' className="text-black">UI/UX Design</Link>
-                  <Link to='/services/technical-support' className="text-black">Technical Support</Link>
+                <div className="pt-10 font-semibold">
+                  <Link to ='/services/custom-software-development' className="text-black hover:bg-gray-100 py-2 px-4 rounded-md mb-2">Custom Software Development </Link>
+                  <Link to='/services/web-development' className="text-black hover:bg-gray-100 py-2 px-4 rounded-md mb-2 ">Web Development </Link>
+                  <Link to='/services/mobile-development' className="text-black hover:bg-gray-100 py-2 px-4 rounded-md mb-2">Mobile Development</Link>
+                  <Link to='/services/ui-ux-design-services' className="text-black hover:bg-gray-100 py-2 px-4 rounded-md mb-2">UI/UX Design</Link>
+                  <Link to='/services/technical-support' className="text-black hover:bg-gray-100 py-2 px-4 rounded-md mb-2">Technical Support</Link>
                 </div>
               </div>
              </div>

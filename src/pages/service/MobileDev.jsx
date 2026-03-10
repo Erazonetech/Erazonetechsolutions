@@ -168,7 +168,7 @@ function MobileDev({ setIsHome }) {
                 whileInView="visible"
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
-                className="bg-slate-900 p-8 shadow-sm shadow-gray-800 rounded-lg hover:shadow-lg transition"
+                className="group relative bg-slate-900 p-8 shadow-sm shadow-gray-800 rounded-lg hover:shadow-lg transition"
               >
                 <Icon size={36} className="text-orange-500" />
                 <h2 className="py-4 text-xl font-semibold text-slate-100">
