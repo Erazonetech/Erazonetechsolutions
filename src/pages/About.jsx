@@ -249,8 +249,8 @@ function About({ setIsHome }) {
       </div>
 
       {/* ===== ABOUT GRID ===== */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-24">
-        <div className="bg-slate-900 p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+      <div className=" max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-24">
+        <div className="group relative bg-slate-900 p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
           <p className="font-serif text-lg leading-relaxed">
             <span className="text-orange-500 font-semibold">ERAZONE</span>{" "}
             Technology Solutions is a forward-thinking IT company delivering
@@ -264,14 +264,14 @@ function About({ setIsHome }) {
           </ul>
         </div>
 
-        <div className="bg-slate-900 p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+        <div className="group relative bg-slate-900 p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
           <p className="font-serif text-lg leading-relaxed text-slate-300">
             We empower clients with operational efficiency, scalability, and
             enhanced user experiences through innovative digital solutions.
           </p>
         </div>
 
-        <div className="bg-slate-900 p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+        <div className="group relative bg-slate-900 p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
           <p className="font-serif text-lg leading-relaxed text-slate-300">
             Beyond business, ERAZONE is committed to social responsibility —
             bridging the digital divide through pro-bono work in healthcare,

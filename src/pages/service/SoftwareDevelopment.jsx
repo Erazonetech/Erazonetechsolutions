@@ -137,12 +137,20 @@ function SoftwareDevelopment({ setIsHome }) {
             variants={fadeUp}
             initial="hidden"
             whileInView="show"
-            whileHover={{ scale: 1.05 }}
+            // whileHover={{ scale: 1.05 }}
+            whileHover="hover"
             viewport={{ once: true }}
-            className="relative group bg-slate-800 p-8 rounded-xl flex gap-6 shadow-lg shadow-orange-500/10"
+            className="group relative bg-slate-800 p-8 rounded-xl flex gap-6 shadow-lg shadow-orange-500/10"
           >
             {/* Dot moving along border */}
-        <span className="border-dot"></span>
+        {/* <div className="border-dot" variants={{
+      hidden: { opacity: 0 },
+      show: { opacity: 0 },
+      hover: {
+        opacity: 1,
+        // Optional: add Framer animation if you prefer, but CSS keyframe is fine
+      }
+    }}></div> */}
             <item.icon size={40} className="text-orange-500" />
 
             <div>

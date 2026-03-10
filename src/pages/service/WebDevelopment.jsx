@@ -97,7 +97,7 @@ function WebDevelopment({ setIsHome }) {
         What We Do
       </h1>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-28">
+      <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-28">
 
         {services.map((service, index) => (
           <motion.div
@@ -107,7 +107,7 @@ function WebDevelopment({ setIsHome }) {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.4 }}
             viewport={{ once: true }}
-            className="bg-slate-800 p-8 rounded-xl shadow-lg shadow-orange-500/10"
+            className="group relative bg-slate-800 p-8 rounded-xl shadow-lg shadow-orange-500/10"
           >
             <service.icon size={40} className="text-orange-500 mb-4" />
 

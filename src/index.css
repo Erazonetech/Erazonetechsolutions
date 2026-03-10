@@ -395,47 +395,83 @@ color:#ce5311;
   /* margin-bottom: 20px; */
 };
 
-
-/* Dot that follows the border */
 .border-dot {
   position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #f97316; /* orange-500 */
+  width: 30px;
+  height: 14px;
+  background: #f97316;
   border-radius: 50%;
-  top: 0;
-  left: 0;
-  opacity: 0;
+  top: -7px;
+  left: -7px;
+  opacity: 0;                    /* start hidden */
   pointer-events: none;
-  z-index: 0;
-  transition: opacity 0.3s;
+  /* z-index: 20; */
+  will-change: transform;
 }
 
-/* Only show and animate on hover */
-.group:hover .border-dot {
-  opacity: 1;
-  animation: borderRotate 3s linear infinite;
+/* No more :hover selector here – Framer handles visibility */
+.border-dot[style*="opacity: 1"] {   /* fallback if needed, but usually not */
+  animation: moveAroundBorder 6s linear infinite;
 }
 
-/* Keyframes along rectangle border */
-@keyframes borderRotate {
+@keyframes moveAroundBorder {
   0% {
-    top: 0; left: 0;
+    transform: translate(0, 0);
   }
   25% {
-    top: 0; left: 100%;
-    transform: translateX(-100%);
+    transform: translate(calc(100% - 14px), 0);
   }
   50% {
-    top: 100%; left: 100%;
-    transform: translate(-100%, -100%);
+    transform: translate(calc(100% - 14px), calc(100% - 14px));
   }
   75% {
-    top: 100%; left: 0;
-    transform: translateY(-100%);
+    transform: translate(0, calc(100% - 14px));
   }
   100% {
-    top: 0; left: 0;
-    transform: translate(0,0);
+    transform: translate(0, 0);
+  }
+}
+.group {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  z-index: 0;
+}
+
+/* rotating border ring */
+.group::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    #f97316 40deg,
+    transparent 80deg
+  );
+
+  opacity: 0;
+  transition: opacity 0.4s;
+
+  /* show ONLY border */
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+
+  mask-composite: exclude;
+  padding: 2px;
+}
+
+/* rotate only on hover */
+.group:hover::before {
+  opacity: 1;
+  animation: rotateBorder 2s linear infinite;
+}
+
+@keyframes rotateBorder {
+  to {
+    transform: rotate(360deg);
   }
 }
