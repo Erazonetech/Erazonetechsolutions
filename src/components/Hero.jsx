@@ -33,7 +33,7 @@ import { Link } from "react-router-dom"
 
 function Hero() {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative pb-5 xl:h-screen w-full overflow-hidden pt-20">
 
       {/* Background Video */}
       <video

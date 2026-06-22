@@ -8,7 +8,7 @@ function Loader() {
         height="80"
         width="80"
         radius="9"
-        color="orange"
+        color="#00CCCC"
         ariaLabel="loading"
         wrapperStyle
         wrapperClass

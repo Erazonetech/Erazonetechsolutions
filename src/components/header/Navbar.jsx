@@ -34,7 +34,7 @@ const [show, setShow] = useState(false);
   return (
     <div className="header menu-opened overflow-hidden w-[100vw]">
 		<div className={` flex justify-between relative`}> 
-      <div className={` bg-white fixed -top-10 left-0 right-0  z-[1000]  top-div h-[150px]`}>
+      <div className={` bg-white fixed -top-5 left-0 right-0  z-[1000]  top-div h-[120px]`}>
       <div className={`flex items-center justify-between mx-20  header-div`}>
           <Link to={'/'}>
             <img className="logo "  src="/Era-logo.jpg" alt="logo"/>
