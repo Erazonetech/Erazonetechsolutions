@@ -8,6 +8,7 @@
     font-family:"monospace";
 }
 
+
 body{
     position: relative;
     color: #bbb;
@@ -44,8 +45,10 @@ body::after {
     }
 /* Logo */
 .logo{
-  width: 250px;
-  height: 200px;
+  padding-top: 20px;
+  margin-left: -35px;
+  width: 350px;
+  height: 150px;
   cursor: pointer;
 }
 /*Service Box */
