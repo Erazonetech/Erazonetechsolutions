@@ -75,12 +75,12 @@ function Footer() {
         {/* Company Info */}
         <div>
           <img
-            className="h-auto -mt-14 w-auto"
-            src="/logo-design.png"
+            className="h-auto -mt-8 w-auto"
+            src="/Era-logo-2.png"
             alt="ERAZONE Logo"
           />
 
-          <p className="text-slate-400 leading-relaxed -mt-10">
+          <p className="text-slate-400 leading-relaxed -mt-2">
             Welcome to ERAZONE, where innovation meets excellence. We craft
             scalable software solutions designed to empower businesses and
             deliver transformative digital experiences.
