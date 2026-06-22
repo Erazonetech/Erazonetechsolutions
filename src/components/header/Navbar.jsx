@@ -37,10 +37,10 @@ const [show, setShow] = useState(false);
       <div className={` bg-white fixed -top-10 left-0 right-0  z-[1000]  top-div h-[150px]`}>
       <div className={`flex items-center justify-between mx-20  header-div`}>
           <Link to={'/'}>
-            <img className="logo "  src="/logo-design.png" alt="logo"/>
+            <img className="logo "  src="/Era-logo.jpg" alt="logo"/>
             </Link>
 
-        <div className="flex gap-10 sm:hidden xl:flex lg:flex md:flex header-nav">
+        <div className="flex gap-10 sm:hidden xl:flex lg:flex md:flex header-nav pt-5">
            <Link to ='/' className='text-white hover:border-b-2 border-gray-00'>    
            <span className='text-black text-2xl hover:text-teal-400'>Home</span>
           </Link>
