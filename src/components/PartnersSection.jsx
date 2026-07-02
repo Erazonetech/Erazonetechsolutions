@@ -1,17 +1,19 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+// import img1 from '../../public/part-1.jpg'
 
 function PartnersSection() {
   const [hovered, setHovered] = useState(false);
 
   const partners = [
-    "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-    "https://msftstories.thesourcemediaassets.com/sites/213/2019/09/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlssLp2WkdffQWReHkh_qa-mfx4ga_XdEv4g&s",
+    "/part-1.jpg",
+    "/part-2.jpg",
+    "/part-3.jpg",
+    "/part-4.jpg",
+    "/part-5.jpg",
+    "/part-6.jpg",
+    // "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlssLp2WkdffQWReHkh_qa-mfx4ga_XdEv4g&s",
   ];
 
   return (

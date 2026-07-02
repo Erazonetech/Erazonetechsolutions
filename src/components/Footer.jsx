@@ -65,14 +65,15 @@ import {
   Mail,
   Phone,
 } from "lucide-react";
+import HomeContact from "./contact/HomeContact";
 
 function Footer() {
   return (
     <footer className="w-full bg-slate-950 border-t border-slate-800">
+      <HomeContact/>
+      {/* <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
-        {/* Company Info */}
         <div>
           <img
             className="h-auto -mt-8 w-auto"
@@ -87,7 +88,7 @@ function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
+   
         <div>
           <h2 className="text-slate-100 text-lg font-semibold mb-6">
             Quick Access
@@ -115,7 +116,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Contact */}
+      
         <div>
           <h2 className="text-slate-100 text-lg font-semibold mb-6">
             Contact
@@ -125,7 +126,7 @@ function Footer() {
 
             <div className="flex items-start gap-3">
               <Phone size={18} className="text-teal-400 mt-1" />
-              <span>+251 45 01 08 57</span>
+              <span>+251 941 728 854</span>
             </div>
 
             <div className="flex items-start gap-3">
@@ -149,7 +150,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Social */}
+       
         <div>
           <h2 className="text-slate-100 text-lg font-semibold mb-6">
             Connect With Us
@@ -162,9 +163,9 @@ function Footer() {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
-      {/* Bottom Bar */}
+   
       <div className="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
         © {new Date().getFullYear()} ERAZONE Technologies. All rights reserved.
       </div>
