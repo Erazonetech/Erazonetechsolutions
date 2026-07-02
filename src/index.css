@@ -47,7 +47,7 @@ body::after {
 .logo{
   padding-top: 20px;
   margin-left: -35px;
-  width: 320px;
+  width: 280px;
   height: 120px;
   cursor: pointer;
 }
@@ -128,7 +128,7 @@ transform: rotate(3.142rad);
    display: flex;
    align-items: center;
    justify-content: center;
-    border: 1px solid #ce5311;
+    border: 1px solid #06ffff;
     border-radius: 5px;
     padding: 10px 5px;
    }
@@ -140,6 +140,10 @@ transform: rotate(3.142rad);
     width: 100%;
     max-height: 10px;
 
+   }
+   .hd-bg{
+    background-color:rgba(15, 23, 42, 0.7);
+    /* background-color:#0f172a */
    }
 
    /* NAVBAR */
@@ -273,7 +277,8 @@ transform: rotate(3.142rad);
 font-size: 16px;
 }
 .dropdown-content a:hover, .dropdown-content-two a:hover{
-color:#ce5311;
+color:#068b8b
+
 }
 
 .dropdown:hover .dropdown-content,.dropdown:hover .dropdown-content-two {display: block;}

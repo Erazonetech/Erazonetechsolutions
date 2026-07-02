@@ -34,23 +34,23 @@ const [show, setShow] = useState(false);
   return (
     <div className="header menu-opened overflow-hidden w-[100vw]">
 		<div className={` flex justify-between relative`}> 
-      <div className={` bg-white fixed -top-5 left-0 right-0  z-[1000]  top-div h-[120px]`}>
+      <div className={` hd-bg fixed -top-5 left-0 right-0  z-[1000]  top-div h-[120px]`}>
       <div className={`flex items-center justify-between mx-20  header-div`}>
           <Link to={'/'}>
-            <img className="logo "  src="/Era-logo.jpg" alt="logo"/>
+            <img className="logo "  src="/Era-logo-prev.png" alt="logo"/>
             </Link>
 
         <div className="flex gap-10 sm:hidden xl:flex lg:flex md:flex header-nav pt-5">
            <Link to ='/' className='text-white hover:border-b-2 border-gray-00'>    
-           <span className='text-black text-2xl hover:text-teal-400'>Home</span>
+           <span className='text-gray-50 text-2xl hover:text-teal-400'>Home</span>
           </Link>
           <Link to ='/' className='dropdown'>
-             <span className=' text-black text-2xl hover:text-teal-400 hover:border-b-2 border-hover:text-teal-400 '>Services</span>
+             <span className=' text-gray-50 text-2xl hover:text-teal-400 hover:border-b-2 border-hover:text-teal-400 '>Services</span>
              <div className="dropdown-content mt-8
              w-[1100%] flex items-center rounded-lg">
              <div className="flex items-center px-10 gap-[10%]">
                 <div className="w-[50%] text-gray-black flex flex-col items-center p-5">
-                  <h1 className="text-2xl font-semibold text-black p-5">Our Services</h1>
+                  <h1 className="text-2xl font-semibold text- p-5">Our Services</h1>
                   <p className="text-black text-xl">At Erazone, we provide wide range of IT services tailored to meet your business needs. Our skilled professionals are dedicated to delivering exceptional results that exceed your expections</p>
                 </div>
                 <div className="pt-10 font-semibold">
@@ -64,10 +64,10 @@ const [show, setShow] = useState(false);
              </div>
           </Link>
           <Link to ='/portfolios' className='hover:border-b-2 border-hover:teal-400'>
-             <span className='text-black text-2xl hover:text-teal-400'>Portfolios</span>
+             <span className='text-gray-50 text-2xl hover:text-teal-400'>Portfolios</span>
           </Link>
            <Link to ='/about' className='hover:border-b-2 border-hover:teal-400'>
-             <span className='text-black text-2xl hover:text-teal-400'>About</span>
+             <span className='text-gray-50 text-2xl hover:text-teal-400'>About</span>
           </Link>
  
          </div>
@@ -79,7 +79,7 @@ const [show, setShow] = useState(false);
                 <IconContext.Provider value={{ color: '#000000' }} className=''>
                  <div className='hidden menu-var'>
                 <Link to='#' onClick={showSidebar} className='menu-bars'>
-                   <span className="text-black text-lg ">MENU</span>
+                   <span className="text-gray-50 text-lg ">MENU</span>
               <FaIcons.FaBars size={20}   color='white'  className='text-white' />
              
             </Link>
@@ -119,11 +119,11 @@ const [show, setShow] = useState(false);
               flex items-center rounded-lg">
              <div className="flex items-center justify-between px-2">
                 <div className="pt-5">
-                  <Link to ='/services/custom-software-development' className="text-black">Custom Software Development </Link>
-                  <Link to='/services/web-development' className="text-black">Web Development </Link>
-                  <Link to='/services/mobile-development' className="text-black">Mobile Development</Link>
-                  <Link to='/services/ui-ux-design-services' className="text-black">UI/UX Design</Link>
-                  <Link to='/services/technical-support' className="text-black">Technical Support</Link>
+                  <Link to ='/services/custom-software-development' className="text-gray-50">Custom Software Development </Link>
+                  <Link to='/services/web-development' className="text-gray-50">Web Development </Link>
+                  <Link to='/services/mobile-development' className="text-gray-50">Mobile Development</Link>
+                  <Link to='/services/ui-ux-design-services' className="text-gray-50">UI/UX Design</Link>
+                  <Link to='/services/technical-support' className="text-gray-50">Technical Support</Link>
                 </div>
               </div>
              </div>
