@@ -3,16 +3,16 @@ import React, { useState } from "react";
 import OSMMap from "../Map";
 function HomeContact() {
 
-const officeLocation = [6.9000, 37.7500 ]; // [Latitude, Longitude]
+const officeLocation = [6.866157630089231, 37.76415260882915 ]; // [Latitude, Longitude]
 
   const markers = [
     {
       id: 1,
       position: officeLocation,
       title: 'Era Zone Technology Solutions',
-      description: '123 Tech Street, New York, NY 10001',
-      phone: '+1 (555) 123-4567',
-      email: 'hello@erazone.com',
+      description: '',
+      phone: '+251 941 728 854',
+      email: 'contact@erazonetech.com',
     },
   ];
   return (

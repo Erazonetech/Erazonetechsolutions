@@ -376,9 +376,9 @@ function About({ setIsHome }) {
             img: "/asfawu.JPG",
           },
           {
-            name: "Natinael Bimer",
+            name: "Melkamu Elisa",
             role: "Software Engineer",
-            img: "/nati-2.jpg",
+            img: "/melkamu.jfif",
           },
           {
             name: "Amanuel Tamirat",

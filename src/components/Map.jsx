@@ -35,7 +35,8 @@ function ChangeView({ center, zoom }) {
 
 // Main Map Component
 function OSMMap({ 
-  center = [40.7128, -74.0060],
+  
+  center = [6.866157630089231, 37.76415260882915],
   zoom = 15,
   markers = [],
   height = '400px',
