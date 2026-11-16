@@ -376,7 +376,7 @@ function About({ setIsHome }) {
             img: "/asfawu.JPG",
           },
           {
-            name: "Melkamu Elisa",
+            name: "Melkamu Elias",
             role: "Software Engineer",
             img: "/melkamu.jfif",
           },
